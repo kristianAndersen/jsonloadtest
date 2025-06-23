@@ -1,0 +1,95 @@
+@media (min-width: 320px) {
+  .general-width:not(.plusminusButton) {
+    min-width: calc(42% - 0.5rem);
+  }
+  .LoanSummary,
+  .stepsInForm {
+    padding: 0 0.2rem 0 0.2rem;
+  }
+  .form {
+    padding: 0.2rem;
+    margin-top: 1rem;
+  }
+  fieldset {
+    padding-block: 0rem;
+    padding-inline: 0rem;
+  }
+  .inputWrap-width {
+    min-width: calc(100% - 0.5rem);
+  }
+  .fade-in{
+    text-align: center;
+  }
+}
+
+@media (min-width: 640px) {
+  .general-width:not(.plusminusButton) {
+    min-width: calc(33% - 0.5rem);
+  }
+
+  .LoanSummary,
+  .stepsInForm {
+    padding: 0;
+  }
+
+  .form {
+    padding: 0;
+  }
+  .inputWrap-width {
+    min-width: calc(30% - 0.5rem);
+  }
+  /*TODO nice to have*/
+  .inputWrap-widthFour {
+    min-width: calc(50% - 0.5rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .general-width:not(.plusminusButton) {
+    min-width: calc(25% - 0.5rem);
+  }
+  .LoanSummary,
+  .stepsInForm {
+    max-width: 1024px;
+    padding: 0;
+  }
+
+  .form {
+    max-width: 1024px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .general-width:not(.plusminusButton) {
+    min-width: calc(25% - 0.5rem);
+  }
+  .LoanSummary,
+  .stepsInForm {
+    max-width: 1280px;
+    padding: 0 1.5rem 0 1.5rem;
+  }
+  .form {
+    max-width: 1280px;
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .inputWrap-width {
+    min-width: calc(20% - 0.5rem);
+  }
+
+  .general-width:not(.plusminusButton) {
+    min-width: calc(20% - 0.5rem);
+  }
+  .LoanSummary,
+  .stepsInForm {
+    max-width: 1536px;
+    padding: 0 1.5rem 0 1.5rem;
+  }
+  .form {
+    max-width: 1536px;
+    padding: 1.5rem;
+  }
+}

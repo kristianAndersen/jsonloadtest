@@ -1,0 +1,141 @@
+.fieldgroups-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap);
+}
+
+fieldset {
+  border-color: var(--fieldset-border-color);
+  border-style: var(--border-style);
+  border-width: var(--border-width);
+  border-radius: var(--border-radius);
+  margin-top: var(--margin-top);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+border:none;
+
+  background: var(--fieldset-background-color);
+}
+
+.group-component {
+  position: relative;
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: var(--elements-gap);
+  width: 100%;
+
+}
+.dependency-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.main-field-wrapper {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  gap: var(--elements-gap);
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+ padding:var(--padding-start)
+}
+.main-field-wrapper > .BaseLable {
+ gap: 0px;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.dependOn,
+.dependency-fieldgroup-wrapper {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  gap: var(--elements-gap);
+  flex-wrap: wrap;
+}
+/*
+  .AfterdependentSections:has(.group-component ){
+   
+  }
+  */
+legend {
+display: flex;
+  margin-left: 0.4rem;
+  background: transparent;
+  font-weight: var(--legend-fontweight);
+  padding-inline: 0.4rem;
+ /* margin-top: -1.2rem;*/
+}
+
+.groupComponentTooltip {
+  display: flex;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  justify-content: space-between;
+  
+ 
+}
+
+.groupComponentTooltip .info-icon {
+  display: flex;
+  fill: var(--icon-info-background);
+  width: 100%;
+  padding-top: var(--icon-padding-top);
+  padding-bottom: var(--icon-padding-bottom);
+  padding-right: var(--icon-paddiing-right);
+}
+
+.groupComponentTooltip-label {
+  position: relative;
+  top: 0;
+ 
+
+  font-size: var(--lable-font-size);
+  font-weight: var(--lable-font-weight);
+  
+  display: grid;
+  transition: grid-template-rows 0.3s ease-in-out;
+}
+
+.extra-info-closed {
+   grid-template-rows: 0fr;
+   width: 100%;
+}
+
+.extra-info-open {
+   grid-template-rows: 1fr;
+width: 100%;
+  }
+
+.content-wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: var(--input-info-background-color);
+  border-color: transparent;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  min-height: 0;
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+}
+
+.groupComponentTooltip-label p {
+  margin: 0;
+  font-size: var(--step--1);
+  padding: var(--padding-start);
+  min-height: 0; /* Key addition */
+}
+

@@ -1,35 +1,27 @@
-@import './base.css';
+@import '../css/reset.css';
+@import '../css/typography.css';
+@import '../css/xyztheme.css';
+@import '../css//base.css';
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
-}
+@import '../css/stepcontainer.css';
+@import '../css/icons.css';
+@import '../css/groupComponent.css';
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
-}
+@import '../css/lables.css';
+@import '../css/InputFieldsEkstra.css';
+@import '../css/inputFields.css';
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
+@import '../css//inputRadio.css';
+@import '../css/inputRange.css';
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+@import '../css//button.css';
+@import '../css/plusminusButton.css';
+@import '../css/PaginationNextBack.css';
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-}
+@import '../css/StepsInForm.css';
+
+@import '../css/LoanSummary.css';
+@import '../css/ApproximateCost.css';
+
+@import '../css/showHidecontainer.css';
+@import '../css//mediaqueries.css';

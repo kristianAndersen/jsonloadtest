@@ -1,0 +1,135 @@
+.input-extra{
+    margin-top: -0.8rem;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+    background-color: var(--input-info-background-color);
+    color: var(--input-info-color);
+    border-color: transparent;
+    border-style: var(--border-style);
+    border-width: var(--border-width);
+    border-radius: var(--border-radius);
+  
+  }
+
+  .input-extra.input-extra-closed{
+     grid-template-rows: 0fr;
+     transition: grid-template-rows 03.s linear;
+     -webkit-transition: grid-template-rows 03.s linear;
+     -moz-transition: grid-template-rows 03.s linear;
+     -ms-transition: grid-template-rows 03.s linear;
+     -o-transition: grid-template-rows 03.s linear;
+}
+
+   .input-extra.input-extra-closed p{
+    margin-top: 0rem;
+    padding: 0rem;
+      text-wrap-style: balance;
+  text-align: center;
+    transition: margin-top 0.3s linear, padding 0.3s linear;
+    -webkit-transition: margin-top 0.3s linear, padding 0.3s linear;
+    -moz-transition: margin-top 0.3s linear, padding 0.3s linear;
+    -ms-transition: margin-top 0.3s linear, padding 0.3s linear;
+    -o-transition: margin-top 0.3s linear, padding 0.3s linear;
+}
+
+
+  .input-extra.input-extra-open{
+   grid-template-rows: 1fr;
+    transition: grid-template-rows 0.5s linear;
+    -webkit-transition: grid-template-rows 0.5s linear;
+    -moz-transition: grid-template-rows 0.5s linear;
+    -ms-transition: grid-template-rows 0.5s linear;
+    -o-transition: grid-template-rows 0.5s linear;
+  }
+  
+  .input-extra.input-extra-open p{
+  margin-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  text-wrap-style: balance;
+  text-align: center;
+  transition: margin-top 0.5s linear, padding 0.5s linear;
+  -webkit-transition: margin-top 0.5s linear, padding 0.5s linear;
+  -moz-transition: margin-top 0.5s linear, padding 0.5s linear;
+  -ms-transition: margin-top 0.5s linear, padding 0.5s linear;
+  -o-transition: margin-top 0.5s linear, padding 0.5s linear;
+  }
+  
+  .input-extra p{
+    overflow: hidden;
+    margin-left: 0.6rem;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-size: var(--step--1);
+    
+  }
+ 
+  .input-extra.input-extra-open.input-extra-info{
+    margin-top: -0.8rem;
+  }
+  
+  .input-extra-error{
+    background: var(--error-background);
+   
+  }
+   .input-extra-error p{
+    color: var(--error-contend);
+    font-weight: bold;
+   }
+  .input-extra-error-noerror{
+    display: none;
+  }
+  
+  input.input.has-info-closed{
+    border-bottom-left-radius: var(--border-radius)!important;
+    border-bottom-right-radius: var(--border-radius)!important;
+    transition: border-radius 0.5s ease-in;
+    -webkit-transition: border-radius 0.5s ease-in;
+    -moz-transition: border-radius 0.5s ease-in;
+    -ms-transition: border-radius 0.5s ease-in;
+    -o-transition: border-radius 0.5s ease-in;
+  }
+  
+  input.input.has-info-open{
+     border-bottom-left-radius: 0!important;
+     border-bottom-right-radius: 0!important;
+     transition: border-radius 0.5s ease-out;
+     -webkit-transition: border-radius 0.5s ease-out;
+     -moz-transition: border-radius 0.5s ease-out;
+     -ms-transition: border-radius 0.5s ease-out;
+     -o-transition: border-radius 0.5s ease-out;
+  }
+  
+  input:focus{
+  outline: none !important;
+  border-color: var(--input-focus)!important;
+  box-shadow: 0 0 0.2rem var(---input-focus)!important;
+  }
+  
+  input.input.has-error{
+    border-color: var(--input-focus-error)!important;
+    border-bottom-left-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+    transition: border-radius 0.5s ease-out, border-color 0.5s ease-out;
+    -webkit-transition: border-radius 0.5s ease-out, border-color 0.5s ease-out;
+    -moz-transition: border-radius 0.5s ease-out, border-color 0.5s ease-out;
+    -ms-transition: border-radius 0.5s ease-out, border-color 0.5s ease-out;
+    -o-transition: border-radius 0.5s ease-out, border-color 0.5s ease-out;
+  }
+  
+  input:focus.input.has-error{
+    outline: none !important;
+    border-color: var(--input-focus-error)!important;
+    box-shadow: 0 0 0.2rem var(--input-focus-error)!important;
+  }
+  
+  input.has-success{
+  border-color: var(--input-focus-succes)!important;
+  }
+  
+  input:focus.has-success{
+  outline: none !important;
+  border-color: var(--input-focus-succes)!important;
+  box-shadow: 0 0 0.2rem var(--input-focus-succes)!important;
+  }

@@ -1,0 +1,1731 @@
+{
+  "type": "full",
+  "weight": 0,
+  "properties": {
+    "renderMode": "pagination",
+    "templateId": "da5ffeb5-69fd-4f3c-8246-e1b6c75d2277",
+    "language": "da-DK",
+    "currency": "DKK"
+  },
+  "steps": {
+    "cbca87f2-afb6-4923-b79d-232e1ce13b54": {
+      "weight": 0,
+      "type": "step",
+      "properties": {
+        "label": "1"
+      },
+      "sections": {
+        "93299674-0931-44da-a7a4-a630e8533511": {
+          "weight": 0,
+          "type": "widget",
+          "properties": {
+            "component": "LoanSummary",
+            "label": {
+              "en-GB": "Loan summary",
+              "da-DK": "Låneoversigt",
+              "fi-FI": "Lainayhteenveto"
+            },
+            "text": {
+              "en-GB": "* At 7.00% variable debit interest rate. Price example: Total credit amount {{amount}}, APR {{apr}}. Establishment fee: 2,500 DKK. Total repayment: {{total_payment}}. Total credit costs: {{total_cost}}.",
+              "fi-FI": "* 7,00 % muuttuva nimelliskorko. Esimerkki: Luoton kokonaismäärä: {{amount}}. Todellinen vuosikorko (TAK): {{apr}}. Avausmaksu: 2 500 €. Kokonais takaisinmaksettava summa: {{total_payment}}. Luoton kokonaiskustannukset: {{total_cost}}.",
+              "da-DK": "* Ved 7,00% variabel deb. rente. Priseksempel: Samlet kreditbeløb {{amount}} ÅOP {{apr}}. Etb. omk. 2.500 kr. Samlet tilbagebetaling: {{total_payment}} Samlede kreditomkostninger: {{total_cost}}"
+            }
+          }
+        },
+        "327cd00c-577a-4e9f-9fc0-235e435820bb": {
+          "weight": 10,
+          "type": "fieldgroups",
+          "properties": {
+            "label": {
+              "en-GB": "Personal Data baaa",
+              "da-DK": "Personlig Data baaa",
+              "fi-FI": "Henkilötiedot "
+            }
+          },
+          "fieldgroups": {
+            "a92725e5-26db-40b3-8615-e89438c18249": {
+              "weight": 0,
+              "type": "fieldgroup",
+              "component": "CompositInput",
+              "properties": {
+                "component": "CompositInput",
+                "label": {
+                  "en-GB": "Personal Data wuuu",
+                  "da-DK": "Personlig Data wuuuu",
+                  "fi-FI": "Henkilötiedot wuuuu"
+                }
+              },
+              "fields": {
+                "5fcb7ad3-9d9e-44ec-aeb6-2c4e39c59100": {
+                  "weight": 0,
+                  "name": "ssn",
+                  "id": "ssn",
+                  "type": "ssn",
+                  "properties": {
+                    "type": "text",
+                    "label": {
+                      "en-GB": "Personal Identity Number wooo",
+                      "da-DK": "Personnummer",
+                      "fi-FI": "Henkilötunnus"
+                    },
+                    "placeholder": {
+                      "en-GB": "Enter your personal identity number",
+                      "da-DK": "Indtast dit personnummer",
+                      "fi-FI": "Syötä henkilötunnuksesi"
+                    },
+                    "tooltip": {
+                      "en-GB": "Your personal identity number for identification.",
+                      "da-DK": "CPR påkrævet til obligatorisk identitetsverifikation. Se privatlivspolitik for detaljer.",
+                      "fi-FI": "Henkilötunnuksesi tunnistamista varten."
+                    },
+                    "error": {
+                      "en-GB": "well that sucks it is not a ssn.",
+                      "da-DK": "klamt nok. det der er ikke et Personnummer.",
+                      "fi-FI": "No jopas on ikävää. Se ei ole henkilötunnus."
+                    }
+                  }
+                },
+                "3c8f9c67-8cd7-4c38-b9ea-20aaeb2693e7": {
+                  "weight": 1,
+                  "name": "email",
+                  "id": "email",
+                  "type": "email",
+                  "properties": {
+                    "type": "email",
+                    "label": {
+                      "en-GB": "Email Address",
+                      "da-DK": "E-mail Adresse",
+                      "fi-FI": "Sähköpostiosoite"
+                    },
+                    "placeholder": {
+                      "en-GB": "Enter your email address",
+                      "da-DK": "Indtast din e-mail adresse",
+                      "fi-FI": "Syötä sähköpostiosoitteesi"
+                    },
+                    "tooltip": {
+                      "en-GB": "Provide your email address for communication.",
+                      "da-DK": "Angiv din e-mail adresse til kommunikation.",
+                      "fi-FI": "Anna sähköpostiosoitteesi viestintää varten."
+                    },
+                    "error": {
+                      "en-GB": "If you call that an email you are bonkers",
+                      "da-DK": "Hvis du kalder det en e-mail, er du pænt lam i roen.",
+                      "fi-FI": "Jos kutsut tuota sähköpostiksi, olet ihan sekaisin."
+                    }
+                  }
+                },
+                "b9c8594b-1170-408e-b22f-1842b88c9c67": {
+                  "weight": 100,
+                  "name": "phone",
+                  "id": "phone",
+                  "type": "tel",
+                  "properties": {
+                    "type": "tel",
+                    "label": {
+                      "en-GB": "Phone Number",
+                      "da-DK": "Telefonnummer",
+                      "fi-FI": "Puhelinnumero"
+                    },
+                    "placeholder": {
+                      "en-GB": "Enter your phone number",
+                      "da-DK": "Indtast dit telefonnummer",
+                      "fi-FI": "Syötä puhelinnumerosi"
+                    },
+                    "tooltip": {
+                      "en-GB": "Your contact phone number.",
+                      "da-DK": "Dit kontakt telefonnummer.",
+                      "fi-FI": "Yhteyspuhelinnumerosi."
+                    },
+                    "error": {
+                      "en-GB": "Your phone number not the squareroot of pi.",
+                      "da-DK": "Dit telefonnummer, ikke kvadratroden af pi.",
+                      "fi-FI": "Puhelinnumerosi, ei π:n neliöjuuri."
+                    }
+                  }
+                }
+              }
+            },
+            "99d3c23a-3012-4954-92f0-44002b73dd82": {
+              "weight": 0,
+              "type": "fieldgroup",
+              "component": "GroupComponent",
+              "properties": {
+                "component": "GroupButtons",
+                "label": {
+                  "en-GB": "Type of Employment",
+                  "da-DK": "Ansættelsestype 1",
+                  "fi-FI": "Työsuhteen tyyppi"
+                }
+              },
+              "fields": {
+                "73d62061-f850-40a2-bf27-94a49fbe06fd": {
+                  "weight": 0,
+                  "name": "type_of_employment",
+                  "id": "type_of_employment",
+                  "type": "button",
+                  "properties": {
+                    "label": {
+                      "en-GB": "Type of Employment",
+                      "da-DK": "Ansættelsestype 2",
+                      "fi-FI": "Työsuhteen tyyppi"
+                    },
+                    "placeholder": {
+                      "en-GB": "Select your type of employment",
+                      "da-DK": "Vælg din ansættelsestype",
+                      "fi-FI": "Valitse työsuhteesi tyyppi"
+                    },
+                    "tooltip": {
+                      "en-GB": "Choose the type of employment that applies to you.",
+                      "da-DK": "Vælg den ansættelsestype, der gælder for dig. Vælg den ansættelsestype, der gælder for dig.",
+                      "fi-FI": "Valitse työsuhteen tyyppi, joka koskee sinua."
+                    },
+                    "error": {
+                      "en-GB": "Hey employment... what you do for money.",
+                      "da-DK": "Arbejde... det man gør for at tjene penge.",
+                      "fi-FI": "Hei työ... se mitä tehdään, että saa rahaa."
+                    },
+                    "options": [
+                      {
+                        "value": "fulltime",
+                        "id": "type_of_employment_fulltime",
+                        "label": {
+                          "en-GB": "Permanent Job",
+                          "da-DK": "Fastansættelse",
+                          "fi-FI": "Pysyvä työ"
+                        },
+                        "weight": 0
+                      },
+                      {
+                        "value": "entrepreneur",
+                        "id": "type_of_employment_entrepreneur",
+                        "label": {
+                          "en-GB": "Entrepreneur",
+                          "da-DK": "Iværksætter",
+                          "fi-FI": "Yrittäjä"
+                        },
+                        "weight": 1
+                      },
+                      {
+                        "value": "freelancer",
+                        "id": "type_of_employment_freelancer",
+                        "label": {
+                          "en-GB": "Freelancer",
+                          "da-DK": "Freelancer",
+                          "fi-FI": "Freelancer"
+                        },
+                        "weight": 2
+                      },
+                      {
+                        "value": "pensioner",
+                        "id": "type_of_employment_pensioner",
+                        "label": {
+                          "en-GB": "Pensioner",
+                          "da-DK": "Pensionist",
+                          "fi-FI": "Eläkeläinen"
+                        },
+                        "weight": 3
+                      },
+                      {
+                        "value": "unemployed",
+                        "id": "type_of_employment_unemployed",
+                        "label": {
+                          "en-GB": "Unemployed",
+                          "da-DK": "Arbejdsledig",
+                          "fi-FI": "Työtön"
+                        },
+                        "weight": 4
+                      },
+                      {
+                        "value": "student",
+                        "id": "type_of_employment_student",
+                        "label": {
+                          "en-GB": "Student",
+                          "da-DK": "Studerende",
+                          "fi-FI": "Opiskelija"
+                        },
+                        "weight": 5
+                      },
+                      {
+                        "value": "trial",
+                        "id": "type_of_employment_trial",
+                        "label": {
+                          "en-GB": "Probationary Period",
+                          "da-DK": "Prøvetid",
+                          "fi-FI": "Koeaika"
+                        },
+                        "weight": 6
+                      },
+                      {
+                        "value": "parentalleave",
+                        "id": "type_of_employment_parentalleave",
+                        "label": {
+                          "en-GB": "Parental Leave",
+                          "da-DK": "Forældreorlov",
+                          "fi-FI": "Vanhempainvapaa"
+                        },
+                        "weight": 7
+                      },
+                      {
+                        "value": "farmer",
+                        "id": "type_of_employment_farmer",
+                        "label": {
+                          "en-GB": "Farmer",
+                          "da-DK": "Landmand",
+                          "fi-FI": "Maanviljelijä"
+                        },
+                        "weight": 8
+                      },
+                      {
+                        "value": "temp_job",
+                        "id": "type_of_employment_temp_job",
+                        "label": {
+                          "en-GB": "Temporary Job",
+                          "da-DK": "Midlertidigt job",
+                          "fi-FI": "Tilapäinen työ"
+                        },
+                        "weight": 9
+                      },
+                      {
+                        "value": "other",
+                        "id": "type_of_employment_other",
+                        "label": {
+                          "en-GB": "Other",
+                          "da-DK": "Andet",
+                          "fi-FI": "Muu"
+                        },
+                        "weight": 10
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "a50d4826-3630-4e9f-a2b9-0d43f1b1798d": {
+              "weight": 10,
+              "type": "fieldgroup",
+              "component": "CompositInput",
+              "properties": {
+                "component": "CompositInput",
+                "label": {
+                  "en-GB": "Income",
+                  "da-DK": "Indkomst",
+                  "fi-FI": "Tulot"
+                }
+              },
+              "fields": {
+                "3b6f8e71-3f64-44d8-a221-5d552b9336b2": {
+                  "weight": 0,
+                  "name": "gross_monthly_income",
+                  "id": "gross_monthly_income",
+                  "type": "currency",
+                  "properties": {
+                    "label": {
+                      "en-GB": "Gross Monthly Income",
+                      "da-DK": "Brutto Månedlig Indkomst",
+                      "fi-FI": "Bruttokuukausitulot"
+                    },
+                    "placeholder": {
+                      "en-GB": "Enter your gross monthly income",
+                      "da-DK": "Indtast din brutto månedlige indkomst",
+                      "fi-FI": "Syötä bruttokuukausitulosi"
+                    },
+                    "tooltip": {
+                      "en-GB": "Your total income before taxes and deductions.",
+                      "da-DK": "Din samlede indkomst før skat og fradrag.",
+                      "fi-FI": "Kokonaistulosi ennen veroja ja vähennyksiä."
+                    },
+                    "error": {
+                      "en-GB": "you missed something about money and tax.",
+                      "da-DK": "Du missede noget med penge.",
+                      "fi-FI": "Jäit paitsi jostain rahaan liittyvästä."
+                    }
+                  }
+                },
+                "df260504-59d2-4cf2-a905-3761c91b7a2b": {
+                  "weight": 1,
+                  "name": "net_monthly_income",
+                  "id": "net_monthly_income",
+                  "type": "currency",
+                  "properties": {
+                    "label": {
+                      "en-GB": "Net Monthly Income",
+                      "da-DK": "Netto Månedlig Indkomst",
+                      "fi-FI": "Nettokuukausitulot"
+                    },
+                    "placeholder": {
+                      "en-GB": "Enter your net monthly income",
+                      "da-DK": "Indtast din netto månedlige indkomst",
+                      "fi-FI": "Syötä nettokuukausitulosi"
+                    },
+                    "tooltip": {
+                      "en-GB": "Your income after taxes and deductions.",
+                      "da-DK": "Din indkomst efter skat og fradrag.",
+                      "fi-FI": "Tulosi verojen ja vähennysten jälkeen."
+                    },
+                    "error": {
+                      "en-GB": "Error: Your income after taxes and deductions is missing.",
+                      "da-DK": "Fejl: Din indkomst efter skat og fradrag mangler.",
+                      "fi-FI": "Virhe: Nettotulosi verojen ja vähennysten jälkeen puuttuu."
+                    }
+                  }
+                }
+              }
+            },
+            "56b289a3-fdb1-4d32-aa76-0cee6044ffc9": {
+              "weight": 20,
+              "type": "fieldgroup",
+              "component": "GroupComponent",
+              "properties": {
+                "component": "CompositeRadioButton",
+                "label": {
+                  "en-GB": "Other Sources of Income",
+                  "da-DK": "Andre Indkomstkilder",
+                  "fi-FI": "Muita Tulonlähteitä"
+                }
+              },
+              "fields": {
+                "ba8e16dd-c1e8-4145-9c00-19ed6803322e": {
+                  "weight": 1,
+                  "name": "has_other_income",
+                  "id": "has_other_income",
+                  "type": "radio",
+                  "component": "BaseButton",
+                  "properties": {
+                    "label": {
+                      "en-GB": "Do you have other sources of income?",
+                      "da-DK": "Har du andre indkomstkilder?",
+                      "fi-FI": "Onko sinulla muita tulonlähteitä?"
+                    },
+                    "placeholder": {
+                      "en-GB": "Select if you have other sources of income",
+                      "da-DK": "Vælg, om du har andre indkomstkilder",
+                      "fi-FI": "Valitse, onko sinulla muita tulonlähteitä"
+                    },
+                    "tooltip": {
+                      "en-GB": "Indicate whether you have income from other sources.",
+                      "da-DK": "Angiv, om du har indkomst fra andre kilder.",
+                      "fi-FI": "Ilmoita, onko sinulla tuloja muista lähteistä."
+                    },
+                    "error": {
+                      "en-GB": "So you perform at OnlyPanths but are ashamed to say.",
+                      "da-DK": "Så du optræder på OnlyPanths, men skammer dig over at sige det.",
+                      "fi-FI": "Eli esiinnyt OnlyPanthsissa, mutta häpeät myöntää sen."
+                    },
+                    "options": [
+                      {
+                        "value": true,
+                        "id": "has_other_income_true",
+                        "label": {
+                          "en-GB": "Yes",
+                          "da-DK": "Ja",
+                          "fi-FI": "Kyllä"
+                        },
+                        "weight": 0
+                      },
+                      {
+                        "value": false,
+                        "id": "has_other_income_false",
+                        "label": {
+                          "en-GB": "No",
+                          "da-DK": "Nej",
+                          "fi-FI": "Ei"
+                        },
+                        "weight": 0
+                      }
+                    ]
+                  }
+                },
+                "1b3111d1-fa20-4c0f-b4b4-c3eae4e21e1b": {
+                  "weight": 1,
+                  "type": "fieldSubGroup",
+                  "component": "CompositInput",
+                  "properties": {
+                    "component": "CompositInput"
+                  },
+                  "visibility": {
+                    "dependsOn": "has_other_income",
+                    "value": true
+                  },
+                  "fields": {
+                    "cb4d80a4-d4e4-4de2-8665-73d645cd56e9": {
+                      "weight": 0,
+                      "name": "additional_income_type",
+                      "id": "additional_income_type",
+                      "type": "currency",
+                      "properties": {
+                        "label": {
+                          "en-GB": "Type of Additional Income",
+                          "da-DK": "Type af Supplerende Indkomst",
+                          "fi-FI": "Lisätulon Tyyppi"
+                        },
+                        "placeholder": {
+                          "en-GB": "E.g., rental income, freelance work",
+                          "da-DK": "F.eks., lejeindtægt, freelancearbejde",
+                          "fi-FI": "Esim., vuokratulot, freelance-työt"
+                        },
+                        "tooltip": {
+                          "en-GB": "Specify the source of your additional income.",
+                          "da-DK": "Angiv kilden til din supplerende indkomst.",
+                          "fi-FI": "Tarkenna, mistä lisätulosi ovat peräisin."
+                        },
+                        "error": {
+                          "en-GB": "you forgot to Specify the source of your additional income.",
+                          "da-DK": "Du glemte at angiv kilden til din supplerende indkomst.",
+                          "fi-FI": "Unohdit ilmoittaa lisätulojesi lähteen."
+                        }
+                      }
+                    },
+                    "bf16f803-76f0-437e-b2ff-24c05c6d8ec9": {
+                      "weight": 0,
+                      "name": "gross_monthly_additional_income",
+                      "id": "gross_monthly_additional_income",
+                      "type": "currency",
+                      "properties": {
+                        "label": {
+                          "en-GB": "Gross Monthly Additional Income",
+                          "da-DK": "Brutto Månedlig Supplerende Indkomst",
+                          "fi-FI": "Bruttokuukausittainen Lisätulo"
+                        },
+                        "placeholder": {
+                          "en-GB": "Enter your gross monthly additional income",
+                          "da-DK": "Indtast din brutto månedlige supplerende indkomst",
+                          "fi-FI": "Syötä bruttokuukausittainen lisätulosi"
+                        },
+                        "tooltip": {
+                          "en-GB": "Your total additional income before taxes and deductions.",
+                          "da-DK": "Din samlede supplerende indkomst før skat og fradrag.",
+                          "fi-FI": "Kokonaistulosi ennen veroja ja vähennyksiä."
+                        },
+                        "error": {
+                          "en-GB": "you total bum.",
+                          "da-DK": "kæmpe bums.",
+                          "fi-FI": "Sä oot ihan täysi renttu."
+                        }
+                      }
+                    },
+                    "7a26989b-c503-4eeb-a8b3-588b8b77df41": {
+                      "weight": 1,
+                      "name": "net_monthly_additional_income",
+                      "id": "net_monthly_additional_income",
+                      "type": "currency",
+                      "properties": {
+                        "label": {
+                          "en-GB": "Net Monthly Additional Income",
+                          "da-DK": "Netto Månedlig Supplerende Indkomst",
+                          "fi-FI": "Nettokuukausittainen Lisätulo"
+                        },
+                        "placeholder": {
+                          "en-GB": "Enter your net monthly additional income",
+                          "da-DK": "Indtast din netto månedlige supplerende indkomst",
+                          "fi-FI": "Syötä nettokuukausittainen lisätulosi"
+                        },
+                        "tooltip": {
+                          "en-GB": "Your additional income after taxes and deductions.",
+                          "da-DK": "Din supplerende indkomst efter skat og fradrag.",
+                          "fi-FI": "Lisätulosi verojen ja vähennysten jälkeen."
+                        },
+                        "error": {
+                          "en-GB": "Buttwaffle you forgot something about taxes and deductions.",
+                          "da-DK": "kæmpe mølle, du har glemt noget om skat og fradrag.",
+                          "fi-FI": "Sä saatana, unohdit jotain veroista ja vähennyksistä."
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "f44eaada-a642-4634-aff2-42214efde890": {
+              "weight": 2,
+              "type": "fieldgroup",
+              "component": "GroupComponent",
+              "properties": {
+                "component": "CompositeRadioButton",
+                "label": {
+                  "en-GB": "Has Co-Applicant?",
+                  "da-DK": "Medansøger?",
+                  "fi-FI": "Onko Yhteishakija?"
+                }
+              },
+              "fields": {
+                "b0cdc194-3e79-4e4e-b80d-6ee7020359b7": {
+                  "weight": 2,
+                  "name": "has_coapplicant",
+                  "id": "has_coapplicant",
+                  "type": "radio",
+                  "component": "BaseButton",
+                  "properties": {
+                    "label": {
+                      "en-GB": "Do you have a co-applicant?",
+                      "da-DK": "Har du en medansøger?",
+                      "fi-FI": "Onko sinulla yhteishakijaa?"
+                    },
+                    "placeholder": {
+                      "en-GB": "Select if you have a co-applicant",
+                      "da-DK": "Vælg, om du har en medansøger",
+                      "fi-FI": "Valitse, onko sinulla yhteishakijaa"
+                    },
+                    "tooltip": {
+                      "en-GB": "Indicate whether you have a co-applicant.",
+                      "da-DK": "Angiv, om du har en medansøger.",
+                      "fi-FI": "Ilmoita, onko sinulla yhteishakijaa."
+                    },
+                    "error": {
+                      "en-GB": "well do you have a co-applicant numnut.",
+                      "da-DK": "Nå, har du en medansøger, tåbe?",
+                      "fi-FI": "No onko sinulla toinen hakija, hömelö?"
+                    },
+                    "options": [
+                      {
+                        "value": true,
+                        "id": "has_coapplicant_true",
+                        "label": {
+                          "en-GB": "Yes",
+                          "da-DK": "Ja",
+                          "fi-FI": "Kyllä"
+                        },
+                        "weight": 0
+                      },
+                      {
+                        "value": false,
+                        "id": "has_coapplicant_false",
+                        "label": {
+                          "en-GB": "No",
+                          "da-DK": "Nej",
+                          "fi-FI": "Ei"
+                        },
+                        "weight": 0
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "abd271d4-1188-40ff-90c5-ad656e5babe3": {
+          "weight": 5,
+          "type": "fieldgroups",
+          "component": "CompositInput",
+          "properties": {
+            "component": "CompositInput",
+            "label": {
+              "en-GB": "Coapplicant Personal Data",
+              "da-DK": "Medansøgers Personlige Data",
+              "fi-FI": "Yhteishakijan Henkilötiedot"
+            }
+          },
+          "visibility": {
+            "dependsOn": "has_coapplicant",
+            "value": true
+          },
+          "fieldgroups": {
+            "a6dceca8-0da9-4598-a3e4-05a781ac5b8b": {
+              "weight": -10,
+              "type": "fieldSubGroup",
+              "component": "CompositInput",
+              "properties": {
+                "component": "CompositInput"
+              },
+              "fields": {
+                "f3e115dd-d869-41a2-a884-e2ba4fed5da7": {
+                  "weight": 0,
+                  "name": "coapplicant_ssn",
+                  "id": "coapplicant_ssn",
+                  "type": "ssn",
+                  "properties": {
+                    "component": "InputSSN",
+                    "label": {
+                      "en-GB": "Coapplicant Personal Identity Number",
+                      "da-DK": "Medansøgers Personnummer",
+                      "fi-FI": "Yhteishakijan Henkilötunnus"
+                    },
+                    "placeholder": {
+                      "en-GB": "Enter the coapplicant's personal identity number",
+                      "da-DK": "Indtast medansøgers personnummer",
+                      "fi-FI": "Syötä yhteishakijan henkilötunnus"
+                    },
+                    "tooltip": {
+                      "en-GB": "Coapplicant's personal identification number.",
+                      "da-DK": "Medansøgers personlige identifikationsnummer.",
+                      "fi-FI": "Yhteishakijan henkilötunnus."
+                    },
+                    "error": {
+                      "en-GB": "Did you forget your Coapplicant's ssn?",
+                      "da-DK": "Glemte du din medansøgers CPR-nummer?",
+                      "fi-FI": "Unohditko toisen hakijan henkilötunnuksen?"
+                    }
+                  }
+                },
+                "ee14ba0d-b0a9-460e-81b2-1fa7da9b1b83": {
+                  "weight": 3,
+                  "name": "coapplicant_email",
+                  "id": "coapplicant_email",
+                  "type": "email",
+                  "properties": {
+                    "label": {
+                      "en-GB": "Coapplicant Email Address",
+                      "da-DK": "Medansøgers E-mail Adresse",
+                      "fi-FI": "Yhteishakijan Sähköpostiosoite"
+                    },
+                    "placeholder": {
+                      "en-GB": "Enter the coapplicant's email address",
+                      "da-DK": "Indtast medansøgers e-mail adresse",
+                      "fi-FI": "Syötä yhteishakijan sähköpostiosoite"
+                    },
+                    "tooltip": {
+                      "en-GB": "Coapplicant's contact email address.",
+                      "da-DK": "Medansøgers kontakt e-mail adresse.",
+                      "fi-FI": "Yhteishakijan sähköpostiosoite."
+                    },
+                    "error": {
+                      "en-GB": "Coapplicant's  email, is it that hard to remember.",
+                      "da-DK": "Medansøgers e-mail, er det virkelig så svært at huske?",
+                      "fi-FI": "Toisen hakijan sähköposti, onko se niin vaikea muistaa?"
+                    }
+                  }
+                },
+                "ac243c2e-e1a3-451b-bb53-1c96a6b9a344": {
+                  "weight": 5,
+                  "name": "coapplicant_phone",
+                  "id": "coapplicant_phone",
+                  "type": "tel",
+                  "properties": {
+                    "label": {
+                      "en-GB": "Coapplicant Phone Number",
+                      "da-DK": "Medansøgers Telefonnummer",
+                      "fi-FI": "Yhteishakijan Puhelinnumero"
+                    },
+                    "placeholder": {
+                      "en-GB": "Enter the coapplicant's phone number",
+                      "da-DK": "Indtast medansøgers telefonnummer",
+                      "fi-FI": "Syötä yhteishakijan puhelinnumero"
+                    },
+                    "tooltip": {
+                      "en-GB": "Coapplicant's contact phone number.",
+                      "da-DK": "Medansøgers kontakt telefonnummer.",
+                      "fi-FI": "Yhteishakijan yhteyspuhelinnumero."
+                    },
+                    "error": {
+                      "en-GB": "Coapplicant’s phone number is a minimum requirement, dude.",
+                      "da-DK": "Medansøgers telefonnummer er et minimumskrav, mand.",
+                      "fi-FI": "Toisen hakijan puhelinnumero on vähimmäisvaatimus, kaveri."
+                    }
+                  }
+                }
+              }
+            },
+            "f7249a8c-e68d-4f43-a625-98b11b465199": {
+              "weight": 0,
+              "type": "fieldSubGroup",
+              "component": "GroupButtons",
+              "properties": {
+                "component": "GroupButtons",
+                "label": {
+                  "en-GB": "Coapplicant Type of Employment",
+                  "da-DK": "Medansøgers Ansættelsestype",
+                  "fi-FI": "Yhteishakijan Työsuhteen Tyyppi"
+                }
+              },
+              "fields": {
+                "5c986c63-bd76-4120-8cbe-402b8a2d0f8b": {
+                  "weight": 0,
+                  "name": "coapplicant_type_of_employment",
+                  "id": "coapplicant_type_of_employment",
+                  "type": "Button",
+                  "properties": {
+                    "label": {
+                      "en-GB": "Coapplicant Type of Employment",
+                      "da-DK": "Medansøgers Ansættelsestype",
+                      "fi-FI": "Yhteishakijan Työsuhteen Tyyppi"
+                    },
+                    "placeholder": {
+                      "en-GB": "Select coapplicant's type of employment",
+                      "da-DK": "Vælg medansøgers ansættelsestype",
+                      "fi-FI": "Valitse yhteishakijan työsuhteen tyyppi"
+                    },
+                    "tooltip": {
+                      "en-GB": "Specify the type of employment for the coapplicant.",
+                      "da-DK": "Angiv medansøgers ansættelsestype.",
+                      "fi-FI": "Määritä yhteishakijan työsuhteen tyyppi."
+                    },
+                    "error": {
+                      "en-GB": "You did not click unemployed or other so I’m waiting.",
+                      "da-DK": "Du har ikke valgt 'arbejdsløs' eller 'andet', så jeg venter.",
+                      "fi-FI": "Et valinnut ’työtön’ tai ’muu’, joten odotan."
+                    },
+                    "options": [
+                      {
+                        "value": "fulltime",
+                        "id": "coapplicant_type_of_employment_fulltime",
+                        "label": {
+                          "en-GB": "Permanent Job",
+                          "da-DK": "Fastansættelse",
+                          "fi-FI": "Pysyvä työ"
+                        },
+                        "weight": 0
+                      },
+                      {
+                        "value": "entrepreneur",
+                        "id": "coapplicant_type_of_employment_entrepreneur",
+                        "label": {
+                          "en-GB": "Entrepreneur",
+                          "da-DK": "Iværksætter",
+                          "fi-FI": "Yrittäjä"
+                        },
+                        "weight": 1
+                      },
+                      {
+                        "value": "freelancer",
+                        "id": "coapplicant_type_of_employment_freelancer",
+                        "label": {
+                          "en-GB": "Freelancer",
+                          "da-DK": "Freelancer",
+                          "fi-FI": "Freelancer"
+                        },
+                        "weight": 2
+                      },
+                      {
+                        "value": "pensioner",
+                        "id": "coapplicant_type_of_employment_pensioner",
+                        "label": {
+                          "en-GB": "Pensioner",
+                          "da-DK": "Pensionist",
+                          "fi-FI": "Eläkeläinen"
+                        }
+                      },
+                      {
+                        "value": "unemployed",
+                        "id": "coapplicant_type_of_employment_unemployed",
+                        "label": {
+                          "en-GB": "Unemployed",
+                          "da-DK": "Arbejdsledig",
+                          "fi-FI": "Työtön"
+                        },
+                        "weight": 3
+                      },
+                      {
+                        "value": "student",
+                        "id": "coapplicant_type_of_employment_student",
+                        "label": {
+                          "en-GB": "Student",
+                          "da-DK": "Studerende",
+                          "fi-FI": "Opiskelija"
+                        },
+                        "weight": 4
+                      },
+                      {
+                        "value": "trial",
+                        "id": "coapplicant_type_of_employment_trial",
+                        "label": {
+                          "en-GB": "Probationary Period",
+                          "da-DK": "Prøvetid",
+                          "fi-FI": "Koeaika"
+                        },
+                        "weight": 5
+                      },
+                      {
+                        "value": "parentalleave",
+                        "id": "coapplicant_type_of_employment_parentalleave",
+                        "label": {
+                          "en-GB": "Parental Leave",
+                          "da-DK": "Forældreorlov",
+                          "fi-FI": "Vanhempainvapaa"
+                        },
+                        "weight": 6
+                      },
+                      {
+                        "value": "farmer",
+                        "id": "coapplicant_type_of_employment_farmer",
+                        "label": {
+                          "en-GB": "Farmer",
+                          "da-DK": "Landmand",
+                          "fi-FI": "Maanviljelijä"
+                        },
+                        "weight": 7
+                      },
+                      {
+                        "value": "temp_job",
+                        "id": "coapplicant_type_of_employment_temp_job",
+                        "label": {
+                          "en-GB": "Temporary Job",
+                          "da-DK": "Midlertidigt Job",
+                          "fi-FI": "Tilapäinen Työ"
+                        },
+                        "weight": 8
+                      },
+                      {
+                        "value": "other",
+                        "id": "coapplicant_type_of_employment_other",
+                        "label": {
+                          "en-GB": "Other",
+                          "da-DK": "Andet",
+                          "fi-FI": "Muu"
+                        },
+                        "weight": 9
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "40e922be-3c5d-4a76-88f4-443b914f2307": {
+              "weight": 10,
+              "type": "fieldSubGroup",
+              "component": "CompositInput",
+              "properties": {
+                "component": "CompositInput",
+                "label": {
+                  "en-GB": "Coapplicant Income",
+                  "da-DK": "Medansøgers Indkomst",
+                  "fi-FI": "Yhteishakijan Tulot"
+                }
+              },
+              "fields": {
+                "8c2b28ef-e7bb-4b94-bb5f-c9719da23221": {
+                  "weight": 0,
+                  "name": "coapplicant_gross_monthly_income",
+                  "id": "coapplicant_gross_monthly_income",
+                  "type": "currency",
+                  "properties": {
+                    "component": "InputCurrency",
+                    "label": {
+                      "en-GB": "Coapplicant Gross Monthly Income",
+                      "da-DK": "Medansøgers Brutto Månedlige Indkomst",
+                      "fi-FI": "Yhteishakijan Bruttokuukausitulot"
+                    },
+                    "placeholder": {
+                      "en-GB": "Enter the coapplicant's gross monthly income",
+                      "da-DK": "Indtast medansøgers brutto månedlige indkomst",
+                      "fi-FI": "Syötä yhteishakijan bruttokuukausitulot"
+                    },
+                    "tooltip": {
+                      "en-GB": "Coapplicant's total income before taxes and deductions.",
+                      "da-DK": "Medansøgers samlede indkomst før skat og fradrag.",
+                      "fi-FI": "Yhteishakijan kokonaistulot ennen veroja ja vähennyksiä."
+                    },
+                    "error": {
+                      "en-GB": "you Forgot the coapplicant’s income? Come on, keep up!",
+                      "da-DK": "Du glemte medansøgerens indkomst. Kom nu!",
+                      "fi-FI": "Unohdit toisen hakijan tulot. Herää!"
+                    }
+                  }
+                },
+                "09863f69-f400-40bc-87ad-79c6f3b1f6e9": {
+                  "weight": 1,
+                  "name": "coapplicant_net_monthly_income",
+                  "id": "coapplicant_net_monthly_income",
+                  "type": "currency",
+                  "properties": {
+                    "component": "InputCurrency",
+                    "label": {
+                      "en-GB": "Coapplicant Net Monthly Income",
+                      "da-DK": "Medansøgers Netto Månedlige Indkomst",
+                      "fi-FI": "Yhteishakijan Nettokuukausitulot"
+                    },
+                    "placeholder": {
+                      "en-GB": "Enter the coapplicant's net monthly income",
+                      "da-DK": "Indtast medansøgers netto månedlige indkomst",
+                      "fi-FI": "Syötä yhteishakijan nettokuukausitulot"
+                    },
+                    "tooltip": {
+                      "en-GB": "Coapplicant's income after taxes and deductions.",
+                      "da-DK": "Medansøgers indkomst efter skat og fradrag.",
+                      "fi-FI": "Yhteishakijan tulot verojen ja vähennysten jälkeen."
+                    },
+                    "error": {
+                      "en-GB": "Forgot the coapplicant’s net income? Seriously?",
+                      "da-DK": "Glemte medansøgerens nettoindkomst? Alvorligt?",
+                      "fi-FI": "Unohdit toisen hakijan nettotulot? Oikeasti?"
+                    }
+                  }
+                }
+              }
+            },
+            "1db4268a-c34b-4f9f-b8bb-b61d40190710": {
+              "weight": 20,
+              "type": "fieldSubGroup",
+              "component": "CompositeRadioButton",
+              "properties": {
+                "component": "CompositeRadioButton",
+                "label": {
+                  "en-GB": "Other Sources of Coapplicant Income",
+                  "da-DK": "Andre Medansøgers Indkomstkilder",
+                  "fi-FI": "Muita Yhteishakijan Tulonlähteitä"
+                }
+              },
+              "fields": {
+                "d5f6ea3c-bd5d-4609-b7e4-4075ac158e0c": {
+                  "weight": 0,
+                  "name": "coapplicant_has_other_income",
+                  "id": "coapplicant_has_other_income",
+                  "type": "radio",
+                  "component": "BaseButton",
+                  "properties": {
+                    "label": {
+                      "en-GB": "Does the coapplicant have other sources of income?",
+                      "da-DK": "Har medansøgeren andre indkomstkilder?",
+                      "fi-FI": "Onko yhteishakijalla muita tulonlähteitä?"
+                    },
+                    "placeholder": {
+                      "en-GB": "Select if the coapplicant has other sources of income",
+                      "da-DK": "Vælg, om medansøgeren har andre indkomstkilder",
+                      "fi-FI": "Valitse, onko yhteishakijalla muita tulonlähteitä"
+                    },
+                    "tooltip": {
+                      "en-GB": "Indicate whether the coapplicant has income from other sources.",
+                      "da-DK": "Angiv, om medansøgeren har indkomst fra andre kilder.",
+                      "fi-FI": "Ilmoita, onko yhteishakijalla tuloja muista lähteistä."
+                    },
+                    "error": {
+                      "en-GB": "Did you forget if the coapplicant has other income? Pay attention!",
+                      "da-DK": "Glemte du om medansøgeren har anden indkomst? Fokus!",
+                      "fi-FI": "Unohditko toisen tulot? Herää!"
+                    },
+                    "options": [
+                      {
+                        "value": true,
+                        "id": "coapplicant_has_other_income_true",
+                        "label": {
+                          "en-GB": "Yes",
+                          "da-DK": "Ja",
+                          "fi-FI": "Kyllä"
+                        },
+                        "weight": 0
+                      },
+                      {
+                        "value": false,
+                        "id": "coapplicant_has_other_income_false",
+                        "label": {
+                          "en-GB": "No",
+                          "da-DK": "Nej",
+                          "fi-FI": "Ei"
+                        },
+                        "weight": 0
+                      }
+                    ]
+                  }
+                },
+                "8a67b8e9-64d5-4f9f-bf18-cf6c9310de12": {
+                  "weight": 0,
+                  "type": "fieldSubGroup",
+                  "component": "CompositInput",
+                  "properties": {
+                    "component": "CompositInput"
+                  },
+                  "visibility": {
+                    "dependsOn": "coapplicant_has_other_income",
+                    "value": true
+                  },
+                  "fields": {
+                    "4b288222-60ed-4a69-9d6e-cfd8efcb51ac": {
+                      "weight": 0,
+                      "name": "coapplicant_additional_income_type",
+                      "id": "coapplicant_additional_income_type",
+                      "type": "currency",
+                      "component": "InputCurrency",
+                      "properties": {
+                        "label": {
+                          "en-GB": "Type of Coapplicant Additional Income",
+                          "da-DK": "Type af Medansøgers Supplerende Indkomst",
+                          "fi-FI": "Yhteishakijan Lisätulon Tyyppi"
+                        },
+                        "placeholder": {
+                          "en-GB": "E.g., rental income, freelance work",
+                          "da-DK": "F.eks., lejeindtægt, freelancearbejde",
+                          "fi-FI": "Esim., vuokratulot, freelance-työt"
+                        },
+                        "tooltip": {
+                          "en-GB": "Specify the source of the coapplicant's additional income.",
+                          "da-DK": "Angiv kilden til medansøgerens supplerende indkomst.",
+                          "fi-FI": "Tarkenna, mistä yhteishakijan lisätulot ovat peräisin."
+                        },
+                        "error": {
+                          "en-GB": "No source ?, is it crime",
+                          "da-DK": "Ingen kilde? Er det en kriminiletet?",
+                          "fi-FI": "Ei lähdettä? Onko se rikos?"
+                        }
+                      }
+                    },
+                    "f743e46b-93a1-48b2-b464-e249f587eb7d": {
+                      "weight": 0,
+                      "name": "coapplicant_gross_monthly_additional_income",
+                      "id": "coapplicant_gross_monthly_additional_income",
+                      "type": "currency",
+                      "properties": {
+                        "component": "CompositInput",
+                        "label": {
+                          "en-GB": "Coapplicant Gross Monthly Additional Income",
+                          "da-DK": "Medansøgers Brutto Månedlige Supplerende Indkomst",
+                          "fi-FI": "Yhteishakijan Bruttokuukausittainen Lisätulo"
+                        },
+                        "placeholder": {
+                          "en-GB": "Enter the coapplicant's gross monthly additional income",
+                          "da-DK": "Indtast medansøgerens brutto månedlige supplerende indkomst",
+                          "fi-FI": "Syötä yhteishakijan bruttokuukausittainen lisätulo"
+                        },
+                        "tooltip": {
+                          "en-GB": "Coapplicant's total additional income before taxes and deductions.",
+                          "da-DK": "Medansøgerens samlede supplerende indkomst før skat og fradrag.",
+                          "fi-FI": "Yhteishakijan kokonaistulot ennen veroja ja vähennyksiä."
+                        },
+                        "error": {
+                          "en-GB": "The total additional income you missed it.",
+                          "da-DK": "Den samlede ekstra indkomst — du missede den.",
+                          "fi-FI": "Kokonaislisätulot — unohdit ne."
+                        }
+                      }
+                    },
+                    "1f88ba5a-16ed-44de-9b79-208674ae1f6a": {
+                      "weight": 1,
+                      "name": "coapplicant_net_monthly_additional_income",
+                      "id": "coapplicant_net_monthly_additional_income",
+                      "type": "currency",
+                      "properties": {
+                        "component": "CompositInput",
+                        "label": {
+                          "en-GB": "Coapplicant Net Monthly Additional Income",
+                          "da-DK": "Medansøgers Netto Månedlige Supplerende Indkomst",
+                          "fi-FI": "Yhteishakijan Nettokuukausittainen Lisätulo"
+                        },
+                        "placeholder": {
+                          "en-GB": "Enter the coapplicant's net monthly additional income",
+                          "da-DK": "Indtast medansøgerens netto månedlige supplerende indkomst",
+                          "fi-FI": "Syötä yhteishakijan nettokuukausittainen lisätulo"
+                        },
+                        "tooltip": {
+                          "en-GB": "Coapplicant's additional income after taxes and deductions.",
+                          "da-DK": "Medansøgerens supplerende indkomst efter skat og fradrag.",
+                          "fi-FI": "Yhteishakijan lisätulot verojen ja vähennysten jälkeen."
+                        },
+                        "error": {
+                          "en-GB": "you forgot this part stupid",
+                          "da-DK": "Du glemte den del, fjols.",
+                          "fi-FI": "Tämän osan unohdit, höhlä."
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "9f3b1868-5455-484d-a1c2-67ded185a8b3": {
+          "weight": -280,
+          "type": "widget",
+          "properties": {
+            "component": "TermsAndConditions",
+            "label": {
+              "en-GB": "Terms 1",
+              "da-DK": "Vilkår",
+              "fi-FI": "Ehdot"
+            }
+          }
+        },
+        "f46079cc-1df8-4b7a-896b-83c6d0a2d0fc": {
+          "weight": -999,
+          "type": "widget",
+          "properties": {
+            "component": "PaginationNext",
+            "label": {
+              "en-GB": "Pagination next",
+              "da-DK": "Sideinddeling næste",
+              "fi-FI": "Sivutus seuraava"
+            }
+          }
+        }
+      }
+    },
+    "e7e2ca35-2e85-4b06-84ed-b479b951a694": {
+      "weight": 10,
+      "type": "step",
+      "properties": {
+        "label": "2"
+      },
+      "sections": {
+        "a1c7b8c2-5d2e-4f14-9159-a3341a9de789": {
+          "weight": 0,
+          "type": "fieldgroups",
+          "component": "GroupComponent",
+          "properties": {
+            "label": {
+              "en-GB": "Additional Personal Details",
+              "da-DK": "Yderligere Personlige Oplysninger",
+              "fi-FI": "Lisähenkilötiedot"
+            }
+          },
+          "fieldgroups": {
+            "b2d8e3f4-6c44-4ef9-8ca4-a343b2dab122": {
+              "weight": -10,
+              "type": "fieldgroup",
+              "component": "GroupComponent",
+              "properties": {
+                "component": "GroupButtons",
+                "label": {
+                  "en-GB": "Marital Status",
+                  "fi-FI": "Siviilisääty",
+                  "da-DK": "Civilstand"
+                }
+              },
+              "fields": {
+                "f1a2b3c4-1234-4d5e-8f9a-b0c1d2e3f4a5": {
+                  "weight": 150,
+                  "name": "marital_status",
+                  "id": "marital_status",
+                  "type": "button",
+                  "properties": {
+                    "placeholder": {
+                      "en-GB": "Select your marital status",
+                      "fi-FI": "Valitse siviilisäätysi",
+                      "da-DK": "Vælg din civilstand"
+                    },
+                    "tooltip": {
+                      "en-GB": "Select your marital status.",
+                      "fi-FI": "Valitse siviilisäätysi.",
+                      "da-DK": "Vælg din civilstand."
+                    },
+                    "error": {
+                      "en-GB": "you forgot to select your marital status.",
+                      "fi-FI": "Unohdit valita siviilisäätysi.",
+                      "da-DK": "Vælg din civilstand."
+                    },
+                    "options": [
+                      {
+                        "value": "single",
+                        "id": "marital_status_single",
+                        "label": {
+                          "en-GB": "Single",
+                          "fi-FI": "Naimaton",
+                          "da-DK": "Single"
+                        },
+                        "weight": 0
+                      },
+                      {
+                        "value": "married",
+                        "id": "marital_status_married",
+                        "label": {
+                          "en-GB": "Married",
+                          "fi-FI": "Naimisissa",
+                          "da-DK": "Gift"
+                        },
+                        "weight": 1
+                      },
+                      {
+                        "value": "divorced",
+                        "id": "marital_status_divorced",
+                        "label": {
+                          "en-GB": "Divorced",
+                          "fi-FI": "Eronnut",
+                          "da-DK": "Fraskilt"
+                        },
+                        "weight": 2
+                      },
+                      {
+                        "value": "widowed",
+                        "id": "marital_status_widowed",
+                        "label": {
+                          "en-GB": "Widowed",
+                          "fi-FI": "Leski",
+                          "da-DK": "Enke/enkemand"
+                        },
+                        "weight": 3
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "b2302508-555b-4e42-bf12-5939f45acc00": {
+              "weight": 0,
+              "type": "fieldgroup",
+              "component": "CompositInput",
+              "properties": {
+                "component": "CompositInput",
+                "label": {
+                  "en-GB": "Personal Data 2/2",
+                  "da-DK": "Personlig Data 2/2",
+                  "fi-FI": "Henkilötiedot 2/2"
+                }
+              },
+              "fields": {
+                "f2a3b4c5-2345-5e6f-9fea-c1d2e3f4a5b6": {
+                  "weight": 1,
+                  "name": "current_marital_status_from_year",
+                  "id": "current_marital_status_from_year",
+                  "type": "year",
+                  "properties": {
+                    "component": "text",
+                    "label": {
+                      "en-GB": "Current Marital Status From Year",
+                      "fi-FI": "Nykyinen siviilisääty alkaen vuodesta",
+                      "da-DK": "Nuværende civilstand siden år"
+                    },
+                    "placeholder": {
+                      "en-GB": "Enter the year your current marital status started",
+                      "fi-FI": "Syötä vuosi, jolloin nykyinen siviilisäätysi alkoi",
+                      "da-DK": "Indtast året, hvor din nuværende civilstand begyndte"
+                    },
+                    "tooltip": {
+                      "en-GB": "Enter the year your current marital status began.",
+                      "fi-FI": "Syötä vuosi, jolloin nykyinen siviilisäätysi alkoi.",
+                      "da-DK": "Indtast året, hvor din nuværende civilstand begyndte."
+                    },
+                    "error": {
+                      "en-GB": "Sorry, what year did your current marital status begin?.",
+                      "fi-FI": "Undskyld, hvilket år begyndte din nuværende civilstand?",
+                      "da-DK": "Anteeksi, minä vuonna nykyinen siviilisäätysi alkoi?"
+                    }
+                  }
+                },
+                "f3a4b5c6-3456-6f7a-abeb-d2e3f4a5b6c7": {
+                  "weight": 2,
+                  "name": "children_under_18",
+                  "id": "children_under_18",
+                  "type": "number",
+                  "properties": {
+                    "component": "InputText",
+                    "label": {
+                      "en-GB": "Children Under 18 Living With You",
+                      "fi-FI": "Alle 18-vuotiaat lapset asuvat kanssasi",
+                      "da-DK": "Børn under 18 år der bor hos dig"
+                    },
+                    "placeholder": {
+                      "en-GB": "Enter number of children under 18 living with you",
+                      "fi-FI": "Syötä alle 18-vuotiaiden kanssasi asuvien lasten määrä",
+                      "da-DK": "Indtast antal børn under 18 år der bor hos dig"
+                    },
+                    "tooltip": {
+                      "en-GB": "Enter how many children under 18 live in your household.",
+                      "fi-FI": "Syötä kuinka monta alle 18-vuotiasta lasta asuu taloudessasi.",
+                      "da-DK": "Indtast hvor mange børn under 18 år der bor i din husstand."
+                    },
+                    "error": {
+                      "en-GB": "You have children under 18 — but how many?",
+                      "fi-FI": "Syötä, kuinka monta alle 18-vuotiasta lasta asuu taloudessasi.",
+                      "da-DK": "Du har børn under 18 - men hvor mange?."
+                    }
+                  }
+                },
+                "f4a5b6c7-4567-7a8b-bcfc-e3f4a5b6c7d8": {
+                  "weight": 3,
+                  "name": "profession",
+                  "id": "profession",
+                  "type": "text",
+                  "properties": {
+                    "component": "InputText",
+                    "label": {
+                      "en-GB": "Profession",
+                      "fi-FI": "Ammatti",
+                      "da-DK": "Erhverv"
+                    },
+                    "placeholder": {
+                      "en-GB": "Enter your profession",
+                      "fi-FI": "Syötä ammattisi",
+                      "da-DK": "Indtast dit erhverv"
+                    },
+                    "tooltip": {
+                      "en-GB": "Specify your current profession.",
+                      "fi-FI": "Ilmoita nykyinen ammattisi.",
+                      "da-DK": "Angiv dit nuværende erhverv."
+                    },
+                    "error": {
+                      "en-GB": "Current profession. is missing",
+                      "fi-FI": "Nykyinen ammatti puuttuu.",
+                      "da-DK": "Nuværende erhverv mangler."
+                    }
+                  }
+                },
+                "f5a6b7c8-5678-8b9c-cdef-f4a5b6c7d8e9": {
+                  "weight": 4,
+                  "name": "position",
+                  "id": "position",
+                  "type": "text",
+                  "properties": {
+                    "component": "InputText",
+                    "label": {
+                      "en-GB": "Position",
+                      "fi-FI": "Asema",
+                      "da-DK": "Stilling"
+                    },
+                    "placeholder": {
+                      "en-GB": "Enter your position or job title",
+                      "fi-FI": "Syötä asematitteli tai tehtävänimike",
+                      "da-DK": "Indtast din stilling eller jobtitel"
+                    },
+                    "tooltip": {
+                      "en-GB": "Enter your job title or position at work.",
+                      "fi-FI": "Syötä työtehtäväsi tai asematitteli.",
+                      "da-DK": "Indtast din jobtitel eller stilling på arbejdet."
+                    },
+                    "error": {
+                      "en-GB": "what is your job title or position at work.",
+                      "fi-FI": "Mikä on työtehtäväsi tai ammattinimikkeesi?",
+                      "da-DK": "Hvad er din jobtitel eller stilling på arbejdet?"
+                    }
+                  }
+                }
+              }
+            },
+            "b224102f-2763-4a91-a116-11c64722f1c3": {
+              "weight": 10,
+              "type": "fieldgroup",
+              "component": "GroupComponent",
+              "properties": {
+                "component": "GroupButtons",
+                "label": {
+                  "en-GB": "Nationality",
+                  "fi-FI": "Kansalaisuus",
+                  "da-DK": "Nationalitet"
+                }
+              },
+              "fields": {
+                "f6a7b8c9-6789-9cad-deef-f5a6b7c8d9e0": {
+                  "weight": 5,
+                  "name": "nationality",
+                  "id": "nationality",
+                  "type": "button",
+                  "properties": {
+                    "placeholder": {
+                      "en-GB": "Select your nationality",
+                      "fi-FI": "Valitse kansalaisuutesi",
+                      "da-DK": "Vælg din nationalitet"
+                    },
+                    "tooltip": {
+                      "en-GB": "Select your nationality.",
+                      "fi-FI": "Valitse kansalaisuutesi.",
+                      "da-DK": "Vælg din nationalitet."
+                    },
+                    "error": {
+                      "en-GB": "Where did you come from, where did you go? This part’s missing, Cotton-Eye Joe!",
+                      "fi-FI": "Mistä tulit ja minne menit? Tämä kohta puuttuu, Cotton-Eye Joe!",
+                      "da-DK": "Hvor kom du fra, hvor gik du hen? Den her del mangler, Cotton-Eye Joe!"
+                    },
+                    "component": "InputSelect",
+                    "options": [
+                      {
+                        "value": "finland",
+                        "id": "nationality_finland",
+                        "label": {
+                          "en-GB": "Finland",
+                          "fi-FI": "Suomi",
+                          "da-DK": "Finland"
+                        },
+                        "weight": 0
+                      },
+                      {
+                        "value": "sweden",
+                        "id": "nationality_sweden",
+                        "label": {
+                          "en-GB": "Sweden",
+                          "fi-FI": "Ruotsi",
+                          "da-DK": "Sverige"
+                        },
+                        "weight": 1
+                      },
+                      {
+                        "value": "estonia",
+                        "id": "nationality_estonia",
+                        "label": {
+                          "en-GB": "Estonia",
+                          "fi-FI": "Viro",
+                          "da-DK": "Estland"
+                        },
+                        "weight": 2
+                      },
+                      {
+                        "value": "russia",
+                        "id": "nationality_russia",
+                        "label": {
+                          "en-GB": "Russia",
+                          "fi-FI": "Venäjä",
+                          "da-DK": "Rusland"
+                        }
+                      },
+                      {
+                        "value": "iraq",
+                        "id": "nationality_iraq",
+                        "label": {
+                          "en-GB": "Iraq",
+                          "fi-FI": "Irak",
+                          "da-DK": "Irak"
+                        },
+                        "weight": 3
+                      },
+                      {
+                        "value": "germany",
+                        "id": "nationality_germany",
+                        "label": {
+                          "en-GB": "Germany",
+                          "fi-FI": "Saksa",
+                          "da-DK": "Tyskland"
+                        },
+                        "weight": 4
+                      },
+                      {
+                        "value": "somalia",
+                        "id": "nationality_somalia",
+                        "label": {
+                          "en-GB": "Somalia",
+                          "fi-FI": "Somalia",
+                          "da-DK": "Somalia"
+                        },
+                        "weight": 5
+                      },
+                      {
+                        "value": "poland",
+                        "id": "nationality_poland",
+                        "label": {
+                          "en-GB": "Poland",
+                          "fi-FI": "Puola",
+                          "da-DK": "Polen"
+                        },
+                        "weight": 6
+                      },
+                      {
+                        "value": "ukraine",
+                        "id": "nationality_ukraine",
+                        "label": {
+                          "en-GB": "Ukraine",
+                          "fi-FI": "Ukraina",
+                          "da-DK": "Ukraine"
+                        },
+                        "weight": 7
+                      },
+                      {
+                        "value": "other",
+                        "id": "nationality_other",
+                        "label": {
+                          "en-GB": "Other",
+                          "fi-FI": "Muu",
+                          "da-DK": "Andet"
+                        },
+                        "weight": 8
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "5e40e019-39c4-4ff0-a613-c46814a5d17a": {
+              "weight": 20,
+              "type": "fieldgroup",
+              "component": "GroupComponent",
+              "properties": {
+                "component": "GroupButtons",
+                "label": {
+                  "en-GB": "Education",
+                  "fi-FI": "Koulutus",
+                  "da-DK": "Uddannelse"
+                }
+              },
+              "fields": {
+                "f7a8b9d0-7890-0bce-ef0f-f6a7b8c9d0e1": {
+                  "weight": 6,
+                  "name": "education",
+                  "id": "education",
+                  "type": "button",
+                  "properties": {
+                    "placeholder": {
+                      "en-GB": "Select your education",
+                      "fi-FI": "Valitse koulutuksesi",
+                      "da-DK": "Vælg din uddannelse"
+                    },
+                    "tooltip": {
+                      "en-GB": "Select your education.",
+                      "fi-FI": "Valitse koulutuksesi.",
+                      "da-DK": "Vælg din uddannelse."
+                    },
+                    "error": {
+                      "en-GB": "Did you even get an education.",
+                      "fi-FI": "Saitko muka edes koulutusta?",
+                      "da-DK": "Fik du overhovedet en uddannelse?"
+                    },
+                    "options": [
+                      {
+                        "value": "highschool",
+                        "id": "education_highschool",
+                        "label": {
+                          "en-GB": "High School",
+                          "fi-FI": "Lukio / Ammattikoulu",
+                          "da-DK": "Gymnasie / Erhvervsskole"
+                        },
+                        "weight": 0
+                      },
+                      {
+                        "value": "bachelor",
+                        "id": "education_bachelor",
+                        "label": {
+                          "en-GB": "Bachelor's Degree",
+                          "fi-FI": "Alempi korkeakoulututkinto",
+                          "da-DK": "Bachelorgrad"
+                        },
+                        "weight": 1
+                      },
+                      {
+                        "value": "master",
+                        "id": "education_master",
+                        "label": {
+                          "en-GB": "Master's Degree",
+                          "fi-FI": "Ylempi korkeakoulututkinto",
+                          "da-DK": "Kandidatgrad"
+                        },
+                        "weight": 2
+                      },
+                      {
+                        "value": "phd",
+                        "id": "education_phd",
+                        "label": {
+                          "en-GB": "PhD",
+                          "fi-FI": "Tohtorintutkinto",
+                          "da-DK": "Ph.d.-grad"
+                        },
+                        "weight": 3
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "b1911b14-e8f2-4d41-8934-b384e6ce2299": {
+              "weight": 30,
+              "type": "fieldgroup",
+              "component": "GroupComponent",
+              "properties": {
+                "component": "GroupButtons",
+                "label": {
+                  "en-GB": "Military Service",
+                  "fi-FI": "Asevelvollisuus",
+                  "da-DK": "Værnepligt"
+                }
+              },
+              "fields": {
+                "f8a9c0d1-8901-1cdf-f001-f7a8b9d0e1f2": {
+                  "weight": 7,
+                  "name": "military_service",
+                  "id": "military_service",
+                  "type": "button",
+                  "properties": {
+                    "placeholder": {
+                      "en-GB": "Select your Military Service",
+                      "fi-FI": "Valitse asevelvollisuutesi",
+                      "da-DK": "Vælg din værnepligt"
+                    },
+                    "tooltip": {
+                      "en-GB": "Select your Military Service.",
+                      "fi-FI": "Valitse asevelvollisuutesi.",
+                      "da-DK": "Vælg din værnepligt."
+                    },
+                    "error": {
+                      "en-GB": "The military service is missing.",
+                      "fi-FI": "Varusmiespalvelus puuttuu.",
+                      "da-DK": "Værnepligten mangler."
+                    },
+                    "options": [
+                      {
+                        "value": "completed",
+                        "id": "military_service_completed",
+                        "label": {
+                          "en-GB": "Completed",
+                          "fi-FI": "Suoritettu",
+                          "da-DK": "Udført"
+                        },
+                        "weight": 0
+                      },
+                      {
+                        "value": "exempted",
+                        "id": "military_service_exempted",
+                        "label": {
+                          "en-GB": "Exempted",
+                          "fi-FI": "Vapautettu",
+                          "da-DK": "Fritaget"
+                        },
+                        "weight": 1
+                      },
+                      {
+                        "value": "pending",
+                        "id": "military_service_pending",
+                        "label": {
+                          "en-GB": "Pending",
+                          "fi-FI": "Kesken",
+                          "da-DK": "Afventer"
+                        },
+                        "weight": 2
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "f44eaada-a642-4634-aff2-42214efde890": {
+              "weight": 1,
+              "type": "fieldgroup",
+              "component": "GroupComponent",
+              "properties": {
+                "component": "CompositeRadioButton",
+                "label": {
+                  "en-GB": "Politically Exposed Person ",
+                  "da-DK": "Politisk eksponeret person?",
+                  "fi-FI": "Poliittisesti vaikutusvaltainen henkilö"
+                }
+              },
+              "fields": {
+                "519100a2-d922-4e06-a701-6aaa77d148f5": {
+                  "weight": 0,
+                  "name": "Politically_Exposed_Person",
+                  "id": "Politically_Exposed_Person",
+                  "type": "radio",
+                  "component": "BaseButton",
+                  "properties": {
+                    "label": {
+                      "en-GB": "Politically Exposed Person (PEP)",
+                      "fi-FI": "Poliittisesti vaikuttava henkilö (PEP)",
+                      "da-DK": "Politisk eksponeret person (PEP)"
+                    },
+                    "placeholder": {
+                      "en-GB": "Are you a politically exposed person?",
+                      "fi-FI": "Oletko poliittisesti vaikuttava henkilö?",
+                      "da-DK": "Er du en politisk eksponeret person?"
+                    },
+                    "tooltip": {
+                      "en-GB": "Indicate if you are a politically exposed person.",
+                      "fi-FI": "Ilmoita, oletko poliittisesti vaikuttava henkilö.",
+                      "da-DK": "Angiv, om du er en politisk eksponeret person."
+                    },
+                    "error": {
+                      "en-GB": "Politically exposed person. It is a yes/no question.",
+                      "fi-FI": "Poliittisesti vaikutusvaltainen henkilö. Kysymys on kyllä/ei.",
+                      "da-DK": "Politisk udsat person. Det er et ja/nej spørgsmål."
+                    },
+                    "options": [
+                      {
+                        "value": true,
+                        "id": "Politically_Exposed_Person_true",
+                        "label": {
+                          "en-GB": "Yes",
+                          "da-DK": "Ja",
+                          "fi-FI": "Kyllä"
+                        },
+                        "weight": 0
+                      },
+                      {
+                        "value": false,
+                        "id": "Politically_Exposed_Person_false",
+                        "label": {
+                          "en-GB": "No",
+                          "da-DK": "Nej",
+                          "fi-FI": "Ei"
+                        },
+                        "weight": 1
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

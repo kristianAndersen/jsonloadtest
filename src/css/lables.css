@@ -1,0 +1,41 @@
+.BaseLable{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    font-size: var( --lable-font-size);
+    font-weight: var(--lable-font-weight);
+    padding-left: var(--lable-paddiing-left);
+    padding-right: var(--lable-padding-right);
+    padding-top: var(--lable-padding-top);
+    padding-bottom: var(--lable-padding-bottom);
+}
+
+
+
+.inputField-lable {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: var(--step--1);
+    font-weight: var(--legend-fontweight);
+    padding-top: var(--lable-padding-top);
+    padding-bottom: var(--lable-padding-bottom);
+    width: 100%;
+    padding-inline: 0.4rem;
+}
+
+.group-lable {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: var(--step--1);
+    font-weight: var(--legend-fontweight);
+    padding-top: var(--lable-padding-top);
+    padding-bottom: var(--lable-padding-bottom);
+    width: 100%;
+    padding-inline: 0.4rem;
+}
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+}

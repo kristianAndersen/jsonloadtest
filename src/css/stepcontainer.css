@@ -1,0 +1,10 @@
+.step-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.divafterStepContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

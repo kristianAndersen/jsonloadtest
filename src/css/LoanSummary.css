@@ -1,0 +1,30 @@
+
+
+.LoanSummary {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: -1rem;
+    background: linear-gradient(0deg,  color-mix(in srgb,var(--forground-color) 10%,transparent), color-mix(in srgb, var(--forground-color) 100%, transparent) 90%);
+}
+
+.LoanSummary.fieldset {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,  color-mix(in srgb,var(--forground-color) 0%,transparent), color-mix(in srgb, var(--boxshadow-color) 100%, transparent) 100%);
+    background-blend-mode: multiply;
+}
+
+.stickyPosition {
+    position: sticky;
+    top: 0;
+    z-index: 20; 
+  }
+

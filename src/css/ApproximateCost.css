@@ -1,0 +1,37 @@
+
+.ApproximateCost-dynamic-example{
+    white-space: preserve;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-size: var(--step--1);
+    padding-top: var(--spacing-top);
+    padding-bottom: var(--spacing-bottom);
+    margin-bottom: var(--spacing-bottom);
+    width: calc(100% - 1rem);
+
+
+}
+
+.ApproximateCost-dynamic-example-amount {
+
+    text-align: center;
+    min-width: 10ch;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: 'tnum';
+ 
+    text-align: center;
+    font-weight: 700
+  }
+
+.ApproximateCost-plusminusOutput{
+    display: inline-block;
+    min-width: 10ch;
+    font-feature-settings: 'tnum';
+    font-variant-numeric: tabular-nums;
+    font-size: var(--step-1);
+    font-weight: var(--font-Bold);
+
+}

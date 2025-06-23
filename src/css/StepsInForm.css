@@ -1,0 +1,71 @@
+.stepsInForm {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+
+  margin-top: 1rem;
+}
+
+.stepperWrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+}
+.dotSteps {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: calc(100% - 2rem);
+}
+
+.stepDot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: var(--progress-dots-background-color);
+  color: var(--progress-dots-color);
+  font-weight: var(--font-Bold);
+  padding: 1rem;
+  z-index: 2;
+}
+
+progress[value] {
+  --color: var(--progress-color); /* the progress color */
+  --background: var(--progress-background-color); /* the background color */
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border: none;
+  position: absolute;
+  z-index: 1;
+  height: 0.5rem;
+  width: 100%;
+  border-radius: 10em;
+  background: var(--background);
+}
+progress[value]::-webkit-progress-bar {
+  border-radius: 10em;
+  background: var(--background);
+}
+progress[value]::-webkit-progress-value {
+  border-radius: 10em;
+  background: var(--color);
+}
+progress[value]::-moz-progress-bar {
+  border-radius: 10em;
+  background: var(--color);
+}

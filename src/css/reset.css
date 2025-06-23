@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body
+ {
+  margin: 0;
+  padding: 0;
+
+}
+html,body
+{
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  min-height: 100%;
+  height: 100%;
+
+}
+
+body {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+textarea {
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;
+  font-size: inherit;
+}
+
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none;
+  margin: 0; 
+}
+
+input[type='number'] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+   
+}
+/*
+Remove inner border and padding from Firefox
+Source: https://github.com/twbs/bootstrap/blob/v4-dev/scss/_reboot.scss
+*/
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+
+button{
+   all: unset  ;
+   font-family: inherit;
+   font-weight: inherit;
+   cursor: pointer;
+}
+
+button span{
+  user-select: none;
+}

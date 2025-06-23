@@ -1,0 +1,160 @@
+:root {
+  /*Typography*/
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+
+  /*Font sizes*/
+  --step--1: clamp(0.8rem, 0.95rem + 0.2vw, 0.8rem);
+  --step-0: clamp(0.9rem, 0.85rem + 0.2vw, 1rem);
+  --step-1: clamp(1rem, 0.95rem + 0.2vw, 1.3rem);
+  --step-big: clamp(2.5rem, 0.95rem + 0.2vw, 4rem);
+
+  --font-Bold: 700;
+  --font-medium: 400;
+
+  /*Colours*/
+  --white: #ffffff;
+  --black: #000000;
+  --background-color: #ffffff;
+  --forground-color: #ffffff;
+
+  --boxshadow-color: #000000;
+
+  /*General*/
+
+   --error-background:#d55f5f;
+  --error-contend: #ffffff;
+  --error-font-size: var(--step-1);
+   --error-font-weight: var(--font-medium:);
+
+--succes-background: #00a100;
+
+  /*spacing*/
+  --spacing-top: 0.7rem;
+  --spacing-bottom: 0.7rem;
+  --padding-start: 0.4rem;
+  --padding-end: 0.4rem;
+  --padding-top: 0.6rem;
+  --padding-bottom: 0.6rem;
+--section-gap: 1rem;
+  --elements-gap: 0.7rem;
+
+  /*transitions*/
+  --baseTranstion-out: all 0.3s ease-Out;
+  --baseTranstion-in: all 0.3s ease-in;
+  --baseTranstion-in-out: all 0.3s ease-in-out;
+  --baseTranstion-linear: all 0.3s linear;
+
+  /*Border*/
+  --border-color: #d3d3d3;
+  --border-style: solid;
+  --border-radius: 0.8rem;
+  --border-width: 0.1rem;
+
+  --box-shadow: 0rem 0.7rem 0.8rem
+    color-mix(in srgb, var(--boxshadow-color) 30%, transparent);
+  
+    /*section*/
+  --section-background-color: #f9f9f9;
+
+
+  /*Fieldset*/
+  --fieldset-background-color: rgba(255, 255, 255, 0);
+  --fieldset-border-color: #d3d3d3;
+  /*Fieldset Legend*/
+  --legend-fontweight: 500;
+  --legend-margin-top: 1rem;
+
+  /*input*/
+  --input-placeholder-color: #b5b5b5;
+
+  --input-focus-succes: #00a100;
+  --input-focus-error: #f59698;
+  --input-focus: #d5b85f;
+
+  --input-info-background-color: #ede0ba;
+
+  /*input lable*/
+  --lable-padding-top: 0.2rem;
+  --lable-padding-bottom: 0.2rem;
+  --lable-paddiing-left: 0.2rem;
+  --lable-paddiing-right: 0.2rem;
+  --lable-font-weight: 300;
+  --lable-font-size: var(--step--1);
+
+  /*Input range*/
+  --range-percent: 0%;
+  --input-range-color-start: #d5b75f;
+  --input-range-color-end: #d3a10a;
+  --input-range-color-end-solid: #f3c17d;
+  --input-thumb-color: #f3c17d;
+  --input-thumb-color-hover: #f3c17d;
+
+  --range-thumb-height: 1.57rem;
+  --range-thumb-width: 1.57rem;
+
+  /*Buttons*/
+
+  --button-background-color: #d5b85f;
+  --button-active: #2c5f2d;
+  --button-inactive: #c0c3c0;
+  --button-disabled: #dddddd;
+  --button-disabled-font-color: #837f7f;
+
+  --button-hover: #c39c26;
+  --button-focus: #00a100;
+
+  --button-font-color: #1c381d;
+  --button-font-color-active: #e9e9e9;
+  --button-hover-font-color: #000000;
+
+  --button-hover-font-weight: 600;
+  --button-hover-font-style: normal;
+
+  --button-border-color: #800000;
+
+  --button-outline-color: #800000;
+  --button-gap: 0.7rem;
+
+  --button-next: #800000;
+  --button-next-hover: #a60000;
+  --button-next-active: #660000;
+  --button-next-font-color: #ffffff;
+  --button-next-font-color-active: #e9e9e9;
+  --button-next-hover-font-color: #cbcbcb;
+
+  --button-previous: #acacac;
+  --button-previous-hover: #878787;
+  --button-previous-color: #d7d7d7;
+  --button-previous-hover-color: #ffffff;
+
+  /*radioButtons*/
+  --radioButtonShadow: #e4e4e4;
+  --radioButtonTrue: #00a100;
+  --radioButtonFalse: #c3584d;
+  --radiobutton-button-background-color: #c59a19;
+  --radiobutton-button-font-color: #000000;
+
+  /*Icons*/
+  --icon-background: #ffffff;
+  --icon-info-background: #b4b4b4;
+
+  --icon-color: #272727;
+  --icon-background-hover: #d5b75f;
+  --icon-color-hover: #ffffff;
+
+  --icon-padding-top: 0.2rem;
+  --icon-padding-bottom: 0.2rem;
+  --icon-paddiing-left: 0.2rem;
+  --icon-paddiing-right: 0.2rem;
+
+  /*progress bar stepper*/
+  --progress-color: #d5b75f;
+  --progress-background-color: #e5e5e5;
+  --progress-dots-background-color: #d5b75f;
+  --progress-dots-color: #ffffff;
+}

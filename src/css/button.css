@@ -1,0 +1,126 @@
+.baseButton {
+    position: relative;
+    display: flex;
+    flex: 1;
+    padding: 1rem;
+    align-items: center;
+    transition: var(--baseTranstion-out);
+    max-height: calc(3.762rem - 2.5rem);
+  }
+  
+  .baseButton:not(.plusminusButton):not(.stepper-button) {
+    border-color: var(--border-color);
+    border-style: var(--border-style);
+    border-width: var(--border-width);
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+}
+
+  .baseButton {
+    justify-content: flex-end;
+  }
+
+  
+
+  .baseButton > span {
+    font-weight: 300;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--button-font-color);
+    font-size: var(--step-1);
+  }
+
+
+  .formButton-active {
+    background-color: var(--button-active) ;
+    transition: var(--baseTranstion-in);
+    -webkit-transition: var(--baseTranstion-in);
+    -moz-transition: var(--baseTranstion-in);
+    -ms-transition: var(--baseTranstion-in);
+    -o-transition: var(--baseTranstion-in);
+    pointer-events: none;
+  }
+
+  .formButton-active > span {
+    color: var(--button-font-color-active);
+  }
+
+
+  
+  .formButton{
+    background-color: var(--button-background-color);
+    color:var(--button-font-color)
+  }
+  .formButton-inactive{
+    background-color: var(--button-inactive) ;
+    transition: var(--baseTranstion-in);
+    -webkit-transition: var(--baseTranstion-in);
+    -moz-transition: var(--baseTranstion-in);
+    -ms-transition: var(--baseTranstion-in);
+    -o-transition: var(--baseTranstion-in);
+  }
+  .formButton:hover:not(.formButton-active){
+    background-color: var(--button-hover);
+    transition: var(--baseTranstion-in);
+    -webkit-transition: var(--baseTranstion-in);
+    -moz-transition: var(--baseTranstion-in);
+    -ms-transition: var(--baseTranstion-in);
+    -o-transition: var(--baseTranstion-in);
+  }
+  
+  .formButton:hover:not(.formButton-active) > span {
+    color: var(--button-hover-font-color);
+    transition: var(--baseTranstion-in);
+    -webkit-transition: var(--baseTranstion-in);
+    -moz-transition: var(--baseTranstion-in);
+    -ms-transition: var(--baseTranstion-in);
+    -o-transition: var(--baseTranstion-in);
+  }
+  
+
+
+  .formButton:focus:not(.radio-button) {
+    background-color: var(--button-hover);
+    color: var(--button-hover-font-color);
+  }
+
+  .baseButton.formButton-active:focus {
+    background-color: var(--button-active);
+    transition: var(--baseTranstion-in);
+    -webkit-transition: var(--baseTranstion-in);
+    -moz-transition: var(--baseTranstion-in);
+    -ms-transition: var(--baseTranstion-in);
+    -o-transition: var(--baseTranstion-in);
+    pointer-events: none;
+  }
+
+  .baseButton.formButton-active:not(:focus) {
+    background-color: var(--button-active);
+    transition: var(--baseTranstion-in);
+    -webkit-transition: var(--baseTranstion-in);
+    -moz-transition: var(--baseTranstion-in);
+    -ms-transition: var(--baseTranstion-in);
+    -o-transition: var(--baseTranstion-in);
+    pointer-events: none;
+  }
+
+
+  .formButton:disabled {
+    background-color: var(--button-disabled);
+    color: var(--button-disabled-font-color);
+    cursor: not-allowed;
+  }
+  
+  .formButton:hover > .plus-icon {
+    background-color: var(--icon-background-hover);
+    color: var(--icon-color-hover);
+    transition: var(--baseTranstion-linear);
+  }
+  
+  
