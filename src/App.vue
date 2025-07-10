@@ -16,7 +16,7 @@ const { trackEvent } = useEventTracking({
 <template>
   <!--Wrap the app in a Language context -->
   <LanguageProvider>
-    <div id="app">
+    <div id="appwrap">
 
       <nav>
         <LanguageSelector />

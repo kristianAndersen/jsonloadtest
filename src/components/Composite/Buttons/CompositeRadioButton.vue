@@ -13,7 +13,7 @@
 
     <BaseButton v-for="option in options || []" :key="option.id || option.value" @button-clicked="buttonWasClicked"
       :id="option.id" class="radioButton" :label="option.label"
-      :class="{ selected: isButtonSelected(option.id, option.value) }"
+      :class="[`BaseButton`, 'formButton', { selected: isButtonSelected(option.id, option.value) }, { 'formButton-active': activeButton === option.value, 'formButton-inactive': activeButton !== null && activeButton !== option.value }]"
       :style="{ order: getOrderFromWeight(option.weight) }" :value="option.value" :step="step" :lableclass="radiolable">
 
 
@@ -41,7 +41,7 @@
 import { ref, onMounted } from "vue";
 import { localized } from "@/composable/useLocalizedText.js";
 import BaseButton from "../../Base/Buttons/BaseButton.vue";
-import InfoIcon from "@/components/Icons/InfoIcon.vue";
+import InfoIcon from "@/components/icons/InfoIcon.vue";
 
 
 import { useRadioStore } from "../../../stores/RadioStore";
@@ -71,10 +71,6 @@ const props = defineProps({
     type: Number,
     default: 1,
   },
-  fieldsId: {
-    type: String,
-
-  },
   label: {
     type: [String, Object],
     default: "Default Label",
@@ -85,7 +81,7 @@ const props = defineProps({
   },
   tooltip: {
     type: [String, Object],
-    default: "Default Tooltip",
+    required: true,
   },
   index: {
     type: Number,
@@ -110,7 +106,7 @@ const props = defineProps({
 });
 
 const isTooltipVisible = ref(false)
-
+const activeButton = ref(null);
 const toggleTooltip = () => {
   isTooltipVisible.value = !isTooltipVisible.value
 
@@ -138,6 +134,7 @@ const buttonWasClicked = (data) => {
   if (radioCheckRef.value[data.value]) {
     radioCheckRef.value[data.value].checked = true;
   }
+  activeButton.value = data.value;
   emit('update:modelValue', data.value);
   // Use the Pinia store to set the state
   radioStore.setOpen(props.id, data.value);

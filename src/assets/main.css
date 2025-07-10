@@ -6,7 +6,7 @@
 @import '../css/stepcontainer.css';
 @import '../css/icons.css';
 @import '../css/groupComponent.css';
-
+@import '../css/MortgageSpesefics.css';
 @import '../css/lables.css';
 @import '../css/InputFieldsEkstra.css';
 @import '../css/inputFields.css';
@@ -18,10 +18,14 @@
 @import '../css/plusminusButton.css';
 @import '../css/PaginationNextBack.css';
 
+@import '../css/stepperComposit.css';
+
 @import '../css/StepsInForm.css';
 
 @import '../css/LoanSummary.css';
 @import '../css/ApproximateCost.css';
+
+@import '../css/infoboxwidget.css';
 
 @import '../css/showHidecontainer.css';
 @import '../css//mediaqueries.css';

@@ -46,7 +46,8 @@ export function updateRoutes(storeData) {
       name: `${step.properties?.label}`,
       component: DynamicView,
       props: { stepId: stepId },
-      meta: { step: 'FormAssembly' }
+      meta: { step: 'FormAssembly' },
+      step: `/step${step.properties?.label}`,
     });
   });
 

@@ -1,27 +1,47 @@
 <template>
 
-  <div class="showHidecontent" :class="{ 'is-open': isOpen, transitioning: allowTransition }"
-    :style="{ maxHeight: contentMaxHeight }" ref="contentRef">
+  <div class="showHidecontent" :class="{ 'is-open': isOpen, transitioning: allowTransition }" ref="contentRef"
+    :style="[{ order: getOrderFromWeight(data.weight), maxHeight: contentMaxHeight }]">
 
     <div class="innerContent" ref="innerContentRef">
       <div class="dependOn" ref="innerContentDependOnRef">
-        <template v-for="[key, value] in Object.entries(data)" :key="key">
-          <BaseGroup :BaseFieldsetLegend="nestedField?.properties?.label" :fieldgroup="value"
-            :order="getOrderFromWeight(value.weight)" :visibility="nestedField?.visibility"> </BaseGroup>
 
+        <template v-if="!nested">
+
+          <BaseGroup v-for="[key, value] in Object.entries(data)" :key="key"
+            :BaseFieldsetLegend="value?.properties?.label" :fieldgroup="value" :order="getOrderFromWeight(value.weight)"
+            :visibility="value?.visibility" :step="step" :type="type" :dependsOn="dependsOn" :id="id" />
         </template>
+
+        <div v-else class="group-component fieldgroup">
+          <div class="main-field-wrapper">
+
+            <template v-for="[key, value] in Object.entries(data)" :key="key">
+
+              <template v-for="(nvalue, index) in value" :key="`${key}-${index}`">
+                <DynamicField v-if="resolveComponent(nvalue?.properties?.component)"
+                  :component="resolveComponent(nvalue?.properties?.component)" :field="nvalue" :step="step"
+                  :fieldlable="nvalue?.properties?.label" />
+              </template>
+            </template>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted, computed, nextTick, watch } from 'vue'
+import { ref, onMounted, onUnmounted, computed, nextTick, watch, defineAsyncComponent } from 'vue'
+import DynamicField from '../../DynamicField.vue'
 import { useRadioStore } from '../../../stores/RadioStore'
 import BaseGroup from '../../Base/containers/BaseGroup.vue'
 import { useWeightToOrder } from "@/composable/useWeightToOrder";
 const { getOrderFromWeight } = useWeightToOrder();
 const props = defineProps({
+
   dependsOn: {
     type: String,
     default: '',
@@ -33,6 +53,18 @@ const props = defineProps({
   data: {
     type: [Object, Array],
     default: () => ({}),
+  },
+  nested: {
+    type: Boolean,
+    default: false,
+  },
+  step: {
+    type: Number,
+    default: 0,
+  },
+  type: {
+    type: String,
+    default: '',
   },
 
 })
@@ -105,6 +137,18 @@ onUnmounted(() => {
   clearTimeout(resizeTimeout)
 })
 
+const componentMap = {
+  GroupButtons: defineAsyncComponent(() => import("../../Groups/Buttons/GroupButtons.vue")),
+  CompositeRadioButton: defineAsyncComponent(() => import("../../Composite/Buttons/CompositeRadioButton.vue")),
+  CompositInput: defineAsyncComponent(() => import("../../Composite/inputs/CompositInput.vue")),
+  EmploymentSpecifics: defineAsyncComponent(() => import("../../widgets/EmploymentSpecifics/EmploymentSpecifics.vue")),
+  MortgageSpesefics: defineAsyncComponent(() => import("../../widgets/MortgageSpesefics/MortgageSpesefics.vue")),
+
+};
+
+const resolveComponent = (componentName) => {
+  return componentMap[componentName] || null;
+};
 
 
 </script>
@@ -130,5 +174,9 @@ onUnmounted(() => {
 .transitioning {
   transition: max-height 300ms ease;
   overflow: hidden;
+}
+
+.main-field-wrapper {
+  padding: 0;
 }
 </style>

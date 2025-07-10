@@ -5,8 +5,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-
-
   /*Font sizes*/
   --step--1: clamp(0.8rem, 0.95rem + 0.2vw, 0.8rem);
   --step-0: clamp(0.9rem, 0.85rem + 0.2vw, 1rem);
@@ -26,12 +24,12 @@
 
   /*General*/
 
-   --error-background:#d55f5f;
+  --error-background: #d55f5f;
   --error-contend: #ffffff;
   --error-font-size: var(--step-1);
-   --error-font-weight: var(--font-medium:);
+  --error-font-weight: var(--font-medium: );
 
---succes-background: #00a100;
+  --succes-background: #00a100;
 
   /*spacing*/
   --spacing-top: 0.7rem;
@@ -40,7 +38,7 @@
   --padding-end: 0.4rem;
   --padding-top: 0.6rem;
   --padding-bottom: 0.6rem;
---section-gap: 1rem;
+  --section-gap: 1rem;
   --elements-gap: 0.7rem;
 
   /*transitions*/
@@ -55,12 +53,10 @@
   --border-radius: 0.8rem;
   --border-width: 0.1rem;
 
-  --box-shadow: 0rem 0.7rem 0.8rem
-    color-mix(in srgb, var(--boxshadow-color) 30%, transparent);
-  
-    /*section*/
-  --section-background-color: #f9f9f9;
+  --box-shadow: 0rem 0.7rem 0.8rem color-mix(in srgb, var(--boxshadow-color) 30%, transparent);
 
+  /*section*/
+  --section-background-color: #f9f9f9;
 
   /*Fieldset*/
   --fieldset-background-color: rgba(255, 255, 255, 0);
@@ -100,7 +96,7 @@
   /*Buttons*/
 
   --button-background-color: #d5b85f;
-  --button-active: #2c5f2d;
+  --button-active: #68ac6b;
   --button-inactive: #c0c3c0;
   --button-disabled: #dddddd;
   --button-disabled-font-color: #837f7f;
@@ -132,11 +128,12 @@
   --button-previous-color: #d7d7d7;
   --button-previous-hover-color: #ffffff;
 
+  --button-shadow: 2px 4px 9px -4px rgba(46, 46, 46, 1);
   /*radioButtons*/
   --radioButtonShadow: #e4e4e4;
-  --radioButtonTrue: #00a100;
-  --radioButtonFalse: #c3584d;
-  --radiobutton-button-background-color: #c59a19;
+  --radioButtonTrue: #e1f8e1;
+  --radioButtonFalse: #eb5c4c;
+  --radiobutton-button-background-color: #d5b85f;
   --radiobutton-button-font-color: #000000;
 
   /*Icons*/
@@ -151,6 +148,11 @@
   --icon-padding-bottom: 0.2rem;
   --icon-paddiing-left: 0.2rem;
   --icon-paddiing-right: 0.2rem;
+
+  --add-icon-width: 1.7rem;
+  --add-icon-height: 1.7rem;
+  --add-icon-circle-fill: #ffffff;
+  --add-icon-path-fill: #68ac6b;
 
   /*progress bar stepper*/
   --progress-color: #d5b75f;

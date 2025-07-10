@@ -453,6 +453,7 @@
                       "id": "additional_income_type",
                       "type": "currency",
                       "properties": {
+                        "component": "CompositInput",
                         "label": {
                           "en-GB": "Type of Additional Income",
                           "da-DK": "Type af Supplerende Indkomst",
@@ -481,6 +482,7 @@
                       "id": "gross_monthly_additional_income",
                       "type": "currency",
                       "properties": {
+                        "component": "CompositInput",
                         "label": {
                           "en-GB": "Gross Monthly Additional Income",
                           "da-DK": "Brutto Månedlig Supplerende Indkomst",
@@ -509,6 +511,7 @@
                       "id": "net_monthly_additional_income",
                       "type": "currency",
                       "properties": {
+                        "component": "CompositInput",
                         "label": {
                           "en-GB": "Net Monthly Additional Income",
                           "da-DK": "Netto Månedlig Supplerende Indkomst",
@@ -888,7 +891,7 @@
                   "id": "coapplicant_gross_monthly_income",
                   "type": "currency",
                   "properties": {
-                    "component": "InputCurrency",
+                    "component": "CompositInput",
                     "label": {
                       "en-GB": "Coapplicant Gross Monthly Income",
                       "da-DK": "Medansøgers Brutto Månedlige Indkomst",
@@ -917,7 +920,7 @@
                   "id": "coapplicant_net_monthly_income",
                   "type": "currency",
                   "properties": {
-                    "component": "InputCurrency",
+                    "component": "CompositInput",
                     "label": {
                       "en-GB": "Coapplicant Net Monthly Income",
                       "da-DK": "Medansøgers Netto Månedlige Indkomst",
@@ -1023,8 +1026,8 @@
                       "name": "coapplicant_additional_income_type",
                       "id": "coapplicant_additional_income_type",
                       "type": "currency",
-                      "component": "InputCurrency",
                       "properties": {
+                        "component": "CompositInput",
                         "label": {
                           "en-GB": "Type of Coapplicant Additional Income",
                           "da-DK": "Type af Medansøgers Supplerende Indkomst",

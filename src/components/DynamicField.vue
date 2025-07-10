@@ -39,13 +39,14 @@ const componentProps = computed(() => ({
   weight: props.field.weight,
 
 
-  ...(props.field.properties.tooltip && { tooltip: props.field.properties.tooltip }),
-  label: props.field.properties.label,
-  placeholder: props.field.properties.placeholder,
-  error: props.field.properties.error,
-  fname: props.field.name,
+  //...(props.field?.properties?.tooltip && { tooltip: props.field?.properties?.tooltip }),
+  tooltip: props.field?.properties?.tooltip,
+  label: props.field?.properties?.label,
+  placeholder: props.field?.properties?.placeholder,
+  error: props.field?.properties?.error,
+  fname: props.field?.name,
 
-  ...(props.field.properties.options && { options: props.field.properties.options }),
+  ...(props.field?.properties?.options && { options: props.field?.properties?.options }),
   fieldData: props.field
 }));
 

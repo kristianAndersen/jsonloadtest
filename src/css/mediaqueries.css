@@ -1,5 +1,5 @@
 @media (min-width: 320px) {
-  .general-width:not(.plusminusButton) {
+  .general-width:not(.plusminusButton):not(.stepper-button) {
     min-width: calc(42% - 0.5rem);
   }
   .LoanSummary,
@@ -17,13 +17,13 @@
   .inputWrap-width {
     min-width: calc(100% - 0.5rem);
   }
-  .fade-in{
+  .fade-in {
     text-align: center;
   }
 }
 
 @media (min-width: 640px) {
-  .general-width:not(.plusminusButton) {
+  .general-width:not(.plusminusButton):not(.stepper-button) {
     min-width: calc(33% - 0.5rem);
   }
 
@@ -45,7 +45,7 @@
 }
 
 @media (min-width: 1024px) {
-  .general-width:not(.plusminusButton) {
+  .general-width:not(.plusminusButton):not(.stepper-button) {
     min-width: calc(25% - 0.5rem);
   }
   .LoanSummary,
@@ -61,7 +61,7 @@
 }
 
 @media (min-width: 1280px) {
-  .general-width:not(.plusminusButton) {
+  .general-width:not(.plusminusButton):not(.stepper-button) {
     min-width: calc(25% - 0.5rem);
   }
   .LoanSummary,
@@ -80,7 +80,7 @@
     min-width: calc(20% - 0.5rem);
   }
 
-  .general-width:not(.plusminusButton) {
+  .general-width:not(.plusminusButton):not(.stepper-button) {
     min-width: calc(20% - 0.5rem);
   }
   .LoanSummary,

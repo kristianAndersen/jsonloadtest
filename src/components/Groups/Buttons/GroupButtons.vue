@@ -1,9 +1,10 @@
-<template>
+<template v-if="options && options.length > 0">
 
   <label class="BaseLable" :style="{ order: getOrderFromWeight(weight) }">
-    {{ fieldlable }}
-    <p> {{ localized(fieldlable) }}</p>
-    <div class="lableicon" v-if="tooltip != Object">
+
+    <p> {{ localized(label) }}</p>
+
+    <div class="lableicon" v-if="typeof tooltip === 'object' && tooltip !== null">
       <InfoIcon @click="toggleTooltip" />
     </div>
   </label>
@@ -15,7 +16,8 @@
     <BaseButton v-for="option in options || []" :key="option.id" @button-clicked="buttonWasClicked" :id="option.id"
       :label="option.label"
       :class="[`BaseButton`, 'formButton', { 'formButton-active': activeButton === option.value, 'formButton-inactive': activeButton !== null && activeButton !== option.value }]"
-      :style="{ order: getOrderFromWeight(option.weight) }" :value="option.value" :step="step" />
+      :style="{ order: getOrderFromWeight(option.weight) }" :value="option.value" :step="step"
+      :addicon="option.addicon" />
 
     <div v-if="tooltip" class="groupComponentTooltip" style="order:10000">
       <div class="groupComponentTooltip-label"
@@ -40,13 +42,13 @@ import BaseButton from '../../Base/Buttons/BaseButton.vue';
 import { useWeightToOrder } from "@/composable/useWeightToOrder";
 const { getOrderFromWeight } = useWeightToOrder();
 
+import { useButtonState } from '@/composable/useButtonState.js';
+const { setButtonData } = useButtonState()
 
-import InfoIcon from "@/components/Icons/InfoIcon.vue";
-
-
+import InfoIcon from "@/components/icons/InfoIcon.vue";
 import { localized } from "@/composable/useLocalizedText.js";
 
-defineProps({
+const props = defineProps({
   component: {
     type: String,
     default: "",
@@ -68,10 +70,6 @@ defineProps({
     type: Number,
     default: 1,
   },
-  fieldsId: {
-    type: String,
-
-  },
   label: {
     type: [String, Object],
     default: "Default Label",
@@ -86,7 +84,7 @@ defineProps({
   },
   tooltip: {
     type: [String, Object],
-    default: "Default Tooltip",
+    default: '',
   },
   index: {
     type: Number,
@@ -132,15 +130,55 @@ const emit = defineEmits(["button-group-clicked"]);
 
 const buttonWasClicked = (data) => {
 
-  activeButton.value = data.value;
-
+  if (props.id != 'add_Loan_credit') {
+    activeButton.value = data.value;
+  }
   emit("button-group-clicked", {
 
     value: data.value,
     id: data.id,
-
+    label: data.label,
   });
 
+
+
+  // only set button data if the value is one of the specified employment types
+  const setButtons = `type_of_employment_fulltime 
+  type_of_employment_selfemployed 
+  type_of_employment_parttime 
+  type_of_employment_pensioner 
+  type_of_employment_unemployed 
+  type_of_employment_student 
+  type_of_employment_temporary 
+  type_of_employment_other 
+  type_of_housing_co-housing 
+  type_of_housing_employee_housing 
+  type_of_housing_partners_house 
+  type_of_housing_parents 
+  type_of_housing_own_house_apartment 
+  type_of_housing_right_of_occupancy 
+  type_of_housing_other_housing 
+  
+  add_Loan_credit_mortgage 
+  add_Loan_credit_visa_credit_card 
+  add_Loan_credit_eurocard
+add_Loan_credit_mastercard
+  add_Loan_credit_diners_club 
+  add_Loan_credit_car_loan 
+  add_Loan_credit_consumption 
+  add_Loan_credit_student_loan 
+ add_Loan_credit_other`;
+
+  const searchTerm = data.value;
+  const regex = new RegExp(`\\b${searchTerm}\\b`);
+
+  if (setButtons.match(regex)) {
+    console.log("setButtons", data.value, data.label);
+    setButtonData(data.value, data.label)
+  }
+
 };
+
+
 </script>
 <style scoped></style>

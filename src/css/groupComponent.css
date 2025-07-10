@@ -14,9 +14,18 @@ fieldset {
   -moz-border-radius: var(--border-radius);
   -ms-border-radius: var(--border-radius);
   -o-border-radius: var(--border-radius);
-border:none;
+  border: none;
 
   background: var(--fieldset-background-color);
+}
+
+.group-component-wrap {
+  position: relative;
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: var(--elements-gap);
+  width: 100%;
 }
 
 .group-component {
@@ -26,7 +35,6 @@ border:none;
   flex-wrap: wrap;
   gap: var(--elements-gap);
   width: 100%;
-
 }
 .dependency-wrapper {
   display: flex;
@@ -40,10 +48,10 @@ border:none;
   flex-wrap: wrap;
   align-items: flex-start;
   align-content: flex-start;
- padding:var(--padding-start)
+  padding: var(--padding-start);
 }
 .main-field-wrapper > .BaseLable {
- gap: 0px;
+  gap: 0px;
 
   display: flex;
   flex-wrap: wrap;
@@ -51,7 +59,6 @@ border:none;
   align-items: center;
   justify-content: space-between;
 }
-
 
 .dependOn,
 .dependency-fieldgroup-wrapper {
@@ -67,12 +74,12 @@ border:none;
   }
   */
 legend {
-display: flex;
+  display: flex;
   margin-left: 0.4rem;
   background: transparent;
   font-weight: var(--legend-fontweight);
   padding-inline: 0.4rem;
- /* margin-top: -1.2rem;*/
+  /* margin-top: -1.2rem;*/
 }
 
 .groupComponentTooltip {
@@ -82,8 +89,6 @@ display: flex;
   overflow: hidden;
   position: relative;
   justify-content: space-between;
-  
- 
 }
 
 .groupComponentTooltip .info-icon {
@@ -98,24 +103,23 @@ display: flex;
 .groupComponentTooltip-label {
   position: relative;
   top: 0;
- 
 
   font-size: var(--lable-font-size);
   font-weight: var(--lable-font-weight);
-  
+
   display: grid;
   transition: grid-template-rows 0.3s ease-in-out;
 }
 
 .extra-info-closed {
-   grid-template-rows: 0fr;
-   width: 100%;
+  grid-template-rows: 0fr;
+  width: 100%;
 }
 
 .extra-info-open {
-   grid-template-rows: 1fr;
-width: 100%;
-  }
+  grid-template-rows: 1fr;
+  width: 100%;
+}
 
 .content-wrapper {
   position: relative;
@@ -138,4 +142,3 @@ width: 100%;
   padding: var(--padding-start);
   min-height: 0; /* Key addition */
 }
-

@@ -1,5 +1,6 @@
-import { ref, computed } from 'vue'
-import formStepData from "../assets/formStepsdata.json";
+import { ref } from 'vue'
+//import formStepData from "../assets/formStepsdata.json";
+import formstepstest from "../assets/formstepstest.json";
 import { defineStore } from 'pinia'
 
 export const useDataStore = defineStore('FormDataStore', () => {
@@ -17,8 +18,8 @@ export const useDataStore = defineStore('FormDataStore', () => {
       //console.log("Raw imported JSON:", formStepData);
 
 
-      formJsonData.value = formStepData;
-      config.value = formStepData.properties
+      formJsonData.value = formstepstest;
+      config.value = formstepstest.properties
       //console.log("Processed form data:", formJsonData.value);
     } catch (err) {
       console.error("Error loading form data:", err);

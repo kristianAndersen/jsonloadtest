@@ -1,0 +1,2615 @@
+{
+  "type": "full",
+  "weight": 0,
+  "properties": {
+    "renderMode": "pagination",
+    "templateId": "da5ffeb5-69fd-4f3c-8246-e1b6c75d2277",
+    "language": "da-DK",
+    "currency": "DKK"
+  },
+  "steps": {
+    "abca80f2-afb6-4923-b79d-232e1ce13b54": {
+      "weight": 0,
+      "type": "step",
+      "properties": {
+        "label": "1"
+      },
+      "sections": {
+        "93299674-0931-44da-a7a4-a630e8533511": {
+          "$comment": "This section is for the Loan Summary",
+          "weight": 0,
+          "type": "widget",
+          "properties": {
+            "component": "LoanSummary",
+            "label": {
+              "en-GB": "Loan summary",
+              "da-DK": "Låneoversigt",
+              "fi-FI": "Lainayhteenveto"
+            },
+            "text": {
+              "en-GB": "* At 7.00% variable debit interest rate. Price example: Total credit amount {{amount}}, APR {{apr}}. Establishment fee: 2,500 DKK. Total repayment: {{total_payment}}. Total credit costs: {{total_cost}}.",
+              "fi-FI": "* 7,00 % muuttuva nimelliskorko. Esimerkki: Luoton kokonaismäärä: {{amount}}. Todellinen vuosikorko (TAK): {{apr}}. Avausmaksu: 2 500 €. Kokonais takaisinmaksettava summa: {{total_payment}}. Luoton kokonaiskustannukset: {{total_cost}}.",
+              "da-DK": "* Ved 7,00% variabel deb. rente. Priseksempel: Samlet kreditbeløb {{amount}} ÅOP {{apr}}. Etb. omk. 2.500 kr. Samlet tilbagebetaling: {{total_payment}} Samlede kreditomkostninger: {{total_cost}}"
+            }
+          }
+        },
+        "327cd00c-577a-4e9f-9fc0-235e435820bb": {
+          "$comment": "This section is for Personal Data",
+          "weight": 1,
+          "type": "fieldgroup",
+          "properties": {
+            "label": {
+              "en-GB": "Personal Data",
+              "da-DK": "Personoplysninger",
+              "fi-FI": "Henkilötiedot"
+            }
+          },
+          "fieldgroups": {
+            "a92725e5-26db-40b3-8615-e89438c18249": {
+              "$comment": "fieldgroup",
+              "weight": 0,
+              "type": "fieldgroup",
+              "component": "CompositInput",
+              "properties": {
+                "component": "CompositInput",
+                "label": {
+                  "en-GB": "Applicant Information",
+                  "da-DK": "Ansøgeroplysninger",
+                  "fi-FI": "Hakijatiedot"
+                }
+              },
+              "fields": {
+                "5fcb7ad3-9d9e-44ec-aeb6-2c4e39c59100": {
+                  "$comment": "SSN  -Input",
+                  "weight": 0,
+                  "name": "ssn",
+                  "id": "ssn",
+                  "type": "ssn",
+                  "properties": {
+                    "type": "text",
+                    "label": {
+                      "en-GB": "Personal Identity Number",
+                      "da-DK": "Personnummer",
+                      "fi-FI": "Henkilötunnus"
+                    },
+                    "placeholder": {
+                      "en-GB": "Enter your personal identity number",
+                      "da-DK": "Indtast dit personnummer",
+                      "fi-FI": "Syötä henkilötunnuksesi"
+                    },
+                    "tooltip": {
+                      "en-GB": "We need to verify your social security number to process your application.",
+                      "da-DK": "Vi skal verificere dit CPR-nummer for at behandle din ansøgning. Dette skal være et dansk CPR-nummer.",
+                      "fi-FI": "Meidän täytyy vahvistaa henkilötunnuksesi hakemuksesi käsittelyä varten. Tämän tulee olla suomalainen henkilötunnus."
+                    },
+                    "error": {
+                      "en-GB": "well that sucks it is not a ssn.",
+                      "da-DK": "klamt nok. det der er ikke et Personnummer.",
+                      "fi-FI": "No jopas on ikävää. Se ei ole henkilötunnus."
+                    }
+                  }
+                },
+                "b9c8594b-1170-408e-b22f-1842b88c9c67": {
+                  "$comment": "phone  -Input",
+                  "weight": 1,
+                  "name": "phone",
+                  "id": "phone",
+                  "type": "tel",
+                  "properties": {
+                    "type": "tel",
+                    "label": {
+                      "en-GB": "Phone Number",
+                      "da-DK": "Telefonnummer",
+                      "fi-FI": "Puhelinnumero"
+                    },
+                    "placeholder": {
+                      "en-GB": "Enter your phone number",
+                      "da-DK": "Indtast dit telefonnummer",
+                      "fi-FI": "Syötä puhelinnumerosi"
+                    },
+                    "tooltip": {
+                      "en-GB": "Your contact phone number.",
+                      "da-DK": "Dit kontakt telefonnummer.",
+                      "fi-FI": "Yhteyspuhelinnumerosi."
+                    },
+                    "error": {
+                      "en-GB": "Your phone number not the squareroot of pi.",
+                      "da-DK": "Dit telefonnummer, ikke kvadratroden af pi.",
+                      "fi-FI": "Puhelinnumerosi, ei π:n neliöjuuri."
+                    }
+                  }
+                },
+                "3c8f9c67-8cd7-4c38-b9ea-20aaeb2693e7": {
+                  "$comment": "email  -Input",
+                  "weight": 2,
+                  "name": "email",
+                  "id": "email",
+                  "type": "email",
+                  "properties": {
+                    "type": "email",
+                    "label": {
+                      "en-GB": "Email Address",
+                      "da-DK": "E-mail Adresse",
+                      "fi-FI": "Sähköpostiosoite"
+                    },
+                    "placeholder": {
+                      "en-GB": "Enter your email address",
+                      "da-DK": "Indtast din e-mail adresse",
+                      "fi-FI": "Syötä sähköpostiosoitteesi"
+                    },
+                    "tooltip": {
+                      "en-GB": "Provide your email address for communication.",
+                      "da-DK": "Angiv din e-mail adresse til kommunikation.",
+                      "fi-FI": "Anna sähköpostiosoitteesi viestintää varten."
+                    },
+                    "error": {
+                      "en-GB": "If you call that an email you are bonkers",
+                      "da-DK": "Hvis du kalder det en e-mail, er du pænt lam i roen.",
+                      "fi-FI": "Jos kutsut tuota sähköpostiksi, olet ihan sekaisin."
+                    }
+                  }
+                }
+              }
+            },
+            "b224102f-2763-4a91-a116-11c64722f1c3": {
+              "$comment": "citizenship  -ButtonGroup",
+              "weight": 1,
+              "name": "nationality",
+              "id": "nationality",
+              "type": "fieldgroup",
+              "component": "GroupComponent",
+              "properties": {
+                "component": "GroupButtons"
+              },
+              "fields": {
+                "f6a7b8c9-6789-9cad-deef-f5a6b7c8d9e0": {
+                  "weight": 5,
+                  "name": "nationality",
+                  "id": "nationality",
+                  "type": "button",
+                  "properties": {
+                    "label": {
+                      "en-GB": "Nationality",
+                      "fi-FI": "Kansalaisuus",
+                      "da-DK": "Nationalitet"
+                    },
+                    "placeholder": {
+                      "en-GB": "Select your nationality",
+                      "fi-FI": "Valitse kansalaisuutesi",
+                      "da-DK": "Vælg din nationalitet"
+                    },
+                    "tooltip": {
+                      "en-GB": "Select your nationality.",
+                      "fi-FI": "Valitse kansalaisuutesi.",
+                      "da-DK": "Vælg din nationalitet."
+                    },
+                    "error": {
+                      "en-GB": "Please select your nationality to continue",
+                      "fi-FI": "Valitse kansallisuutesi jatkaaksesi",
+                      "da-DK": "Vælg venligst din nationalitet for at fortsætte"
+                    },
+                    "options": [
+                      {
+                        "value": "finland",
+                        "id": "nationality_finland",
+                        "label": {
+                          "en-GB": "Finland",
+                          "fi-FI": "Suomi",
+                          "da-DK": "Finland"
+                        },
+                        "weight": 0
+                      },
+                      {
+                        "value": "sweden",
+                        "id": "nationality_sweden",
+                        "label": {
+                          "en-GB": "Sweden",
+                          "fi-FI": "Ruotsi",
+                          "da-DK": "Sverige"
+                        },
+                        "weight": 1
+                      },
+                      {
+                        "value": "estonia",
+                        "id": "nationality_estonia",
+                        "label": {
+                          "en-GB": "Estonia",
+                          "fi-FI": "Viro",
+                          "da-DK": "Estland"
+                        },
+                        "weight": 2
+                      },
+                      {
+                        "value": "russia",
+                        "id": "nationality_russia",
+                        "label": {
+                          "en-GB": "Russia",
+                          "fi-FI": "Venäjä",
+                          "da-DK": "Rusland"
+                        },
+                        "weight": 3
+                      },
+                      {
+                        "value": "nationality_other",
+                        "id": "nationality_other",
+                        "label": {
+                          "en-GB": "Other",
+                          "fi-FI": "Muu",
+                          "da-DK": "Andet"
+                        },
+                        "weight": 4
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "b2d8e3f4-6c44-4ef9-8ca4-a343b2dab122": {
+              "weight": 2,
+              "type": "fieldgroup",
+              "id": "maritalstatus",
+              "properties": {
+                "component": "GroupButtons"
+              },
+              "fields": {
+                "f1a2b3c4-1234-4d5e-8f9a-b0c1d2e3f4a5": {
+                  "weight": 150,
+                  "name": "marital_status",
+                  "id": "marital_status",
+                  "type": "button",
+                  "properties": {
+                    "label": {
+                      "en-GB": "Marital Status",
+                      "fi-FI": "Siviilisääty",
+                      "da-DK": "Civilstand"
+                    },
+                    "placeholder": {
+                      "en-GB": "Select your marital status",
+                      "fi-FI": "Valitse siviilisäätysi",
+                      "da-DK": "Vælg din civilstand"
+                    },
+                    "tooltip": {
+                      "en-GB": "Select your marital status.",
+                      "fi-FI": "Valitse siviilisäätysi.",
+                      "da-DK": "Vælg din civilstand."
+                    },
+                    "error": {
+                      "en-GB": "you forgot to select your marital status.",
+                      "fi-FI": "Unohdit valita siviilisäätysi.",
+                      "da-DK": "Vælg din civilstand."
+                    },
+                    "options": [
+                      {
+                        "value": "single",
+                        "id": "marital_status_single",
+                        "label": {
+                          "en-GB": "Single",
+                          "fi-FI": "Naimaton",
+                          "da-DK": "Single"
+                        },
+                        "weight": 0
+                      },
+                      {
+                        "value": "married",
+                        "id": "marital_status_married",
+                        "label": {
+                          "en-GB": "Married",
+                          "fi-FI": "Naimisissa",
+                          "da-DK": "Gift"
+                        },
+                        "weight": 1
+                      },
+                      {
+                        "value": "divorced",
+                        "id": "marital_status_divorced",
+                        "label": {
+                          "en-GB": "Divorced",
+                          "fi-FI": "Eronnut",
+                          "da-DK": "Fraskilt"
+                        },
+                        "weight": 2
+                      },
+                      {
+                        "value": "widowed",
+                        "id": "marital_status_widowed",
+                        "label": {
+                          "en-GB": "Widowed",
+                          "fi-FI": "Leski",
+                          "da-DK": "Enke/enkemand"
+                        },
+                        "weight": 3
+                      }
+                    ]
+                  }
+                },
+                "6fcb7ad3-9d9e-44ec-aeb6-2c4e39c59100": {
+                  "weight": 160,
+                  "type": "widget",
+                  "properties": {
+                    "component": "CompositeStepperButton",
+                    "label": {
+                      "en-GB": "children 18",
+                      "da-DK": "children 18",
+                      "fi-FI": "children 18"
+                    },
+                    "text": {
+                      "en-GB": "children 18",
+                      "fi-FI": "children 18",
+                      "da-DK": "children 18"
+                    }
+                  },
+                  "fields": {
+                    "6fcb7ad3-7d6f-44ec-aeb6-2c4e39c59100": {
+                      "weight": 2,
+                      "name": "step_plus",
+                      "id": "stepplus_1",
+                      "type": "button",
+                      "properties": {
+                        "component": "BaseButton",
+                        "value": "increment",
+                        "label": {
+                          "en-GB": "+",
+                          "da-DK": "+",
+                          "fi-FI": "+"
+                        }
+                      }
+                    },
+                    "6fcb7ad3-3d3e-55ec-aeb6-2c4e39c59100": {
+                      "weight": 1,
+                      "name": "stepinput_1",
+                      "id": "stepinput_1",
+                      "type": "number",
+                      "properties": {
+                        "component": "BaseInput",
+                        "props": {
+                          "type": "text",
+                          "min": 0,
+                          "max": 100,
+                          "vmodel": "number",
+                          "mode": "numeric",
+                          "stepjump": 1
+                        },
+                        "placeholder": {
+                          "en-GB": "kids 18",
+                          "da-DK": "kids 18",
+                          "fi-FI": "kids 18"
+                        }
+                      }
+                    },
+                    "6ecb2ad9-9d9e-66ec-abb6-2c4e39c59100": {
+                      "weight": 0,
+                      "name": "step_minus",
+                      "id": "step_minus_1",
+                      "type": "button",
+                      "properties": {
+                        "component": "BaseButton",
+                        "value": "decrement",
+                        "label": {
+                          "en-GB": "-",
+                          "da-DK": "-",
+                          "fi-FI": "-"
+                        }
+                      }
+                    },
+                    "6fuc7kd3-9d9e-44uo-ueb6-2c4e39c59100": {
+                      "weight": 157,
+                      "name": "current_Marital status",
+                      "id": "current_marital_status",
+                      "type": "year",
+                      "component": "CompositInput",
+                      "properties": {
+                        "component": "CompositInput",
+                        "label": {
+                          "en-GB": "Current status from year",
+                          "da-DK": "Current status from year",
+                          "fi-FI": "Current status from year"
+                        },
+                        "placeholder": {
+                          "en-GB": "Your current Marital status",
+                          "da-DK": "Your current Marital status",
+                          "fi-FI": "Your current Marital status"
+                        },
+                        "tooltip": {
+                          "en-GB": "From what year is your current Marital status",
+                          "da-DK": "From what year is your current Marital status",
+                          "fi-FI": "From what year is your current Marital status"
+                        },
+                        "error": {
+                          "en-GB": "",
+                          "da-DK": "",
+                          "fi-FI": ""
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "5e40e019-39c4-4ff0-a613-c46814a5d17a": {
+              "weight": 4,
+              "type": "fieldgroup",
+              "component": "GroupComponent",
+              "properties": {
+                "component": "GroupButtons"
+              },
+              "fields": {
+                "f7a8b9d0-7890-0bce-ef0f-f6a7b8c9d0e1": {
+                  "$comment": "education -ButtonGroup",
+                  "weight": 6,
+                  "name": "education",
+                  "id": "education",
+                  "type": "button",
+                  "properties": {
+                    "label": {
+                      "en-GB": "Education",
+                      "fi-FI": "Koulutus",
+                      "da-DK": "Uddannelse"
+                    },
+                    "placeholder": {
+                      "en-GB": "Select your education",
+                      "fi-FI": "Valitse koulutuksesi",
+                      "da-DK": "Vælg din uddannelse"
+                    },
+                    "tooltip": {
+                      "en-GB": "Select your education.",
+                      "fi-FI": "Valitse koulutuksesi.",
+                      "da-DK": "Vælg din uddannelse."
+                    },
+                    "error": {
+                      "en-GB": "Did you even get an education.",
+                      "fi-FI": "Saitko muka edes koulutusta?",
+                      "da-DK": "Fik du overhovedet en uddannelse?"
+                    },
+                    "options": [
+                      {
+                        "value": "highschool",
+                        "id": "education_highschool",
+                        "label": {
+                          "en-GB": "High School",
+                          "fi-FI": "Lukio / Ammattikoulu",
+                          "da-DK": "Gymnasie / Erhvervsskole"
+                        },
+                        "weight": 0
+                      },
+                      {
+                        "value": "bachelor",
+                        "id": "education_bachelor",
+                        "label": {
+                          "en-GB": "Bachelor's Degree",
+                          "fi-FI": "Alempi korkeakoulututkinto",
+                          "da-DK": "Bachelorgrad"
+                        },
+                        "weight": 1
+                      },
+                      {
+                        "value": "master",
+                        "id": "education_master",
+                        "label": {
+                          "en-GB": "Master's Degree",
+                          "fi-FI": "Ylempi korkeakoulututkinto",
+                          "da-DK": "Kandidatgrad"
+                        },
+                        "weight": 2
+                      },
+                      {
+                        "value": "phd",
+                        "id": "education_phd",
+                        "label": {
+                          "en-GB": "PhD",
+                          "fi-FI": "Tohtorintutkinto",
+                          "da-DK": "Ph.d.-grad"
+                        },
+                        "weight": 3
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "b1911b14-e8f2-4d41-8934-b384e6ce2299": {
+              "weight": 4,
+              "type": "fieldgroup",
+              "component": "GroupComponent",
+              "properties": {
+                "component": "GroupButtons"
+              },
+              "fields": {
+                "f8a9c0d1-8901-1cdf-f001-f7a8b9d0e1f2": {
+                  "$comment": "military -ButtonGroup",
+                  "weight": 4,
+                  "name": "military_service",
+                  "id": "military_service",
+                  "type": "button",
+                  "properties": {
+                    "label": {
+                      "en-GB": "Military Service",
+                      "fi-FI": "Asevelvollisuus",
+                      "da-DK": "Værnepligt"
+                    },
+                    "placeholder": {
+                      "en-GB": "Select your Military Service",
+                      "fi-FI": "Valitse asevelvollisuutesi",
+                      "da-DK": "Vælg din værnepligt"
+                    },
+                    "tooltip": {
+                      "en-GB": "Select your Military Service.",
+                      "fi-FI": "Valitse asevelvollisuutesi.",
+                      "da-DK": "Vælg din værnepligt."
+                    },
+                    "error": {
+                      "en-GB": "The military service is missing.",
+                      "fi-FI": "Varusmiespalvelus puuttuu.",
+                      "da-DK": "Værnepligten mangler."
+                    },
+                    "options": [
+                      {
+                        "value": "completed",
+                        "id": "military_service_completed",
+                        "label": {
+                          "en-GB": "Completed",
+                          "fi-FI": "Suoritettu",
+                          "da-DK": "Udført"
+                        },
+                        "weight": 0
+                      },
+                      {
+                        "value": "exempted",
+                        "id": "military_service_exempted",
+                        "label": {
+                          "en-GB": "Exempted",
+                          "fi-FI": "Vapautettu",
+                          "da-DK": "Fritaget"
+                        },
+                        "weight": 1
+                      },
+                      {
+                        "value": "pending",
+                        "id": "military_service_pending",
+                        "label": {
+                          "en-GB": "Pending",
+                          "fi-FI": "Kesken",
+                          "da-DK": "Afventer"
+                        },
+                        "weight": 2
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "f44eaada-a642-4634-aff2-42214efde890": {
+              "$comment": "political_worker -radiobutton",
+              "weight": 5,
+              "type": "fieldgroup",
+              "component": "GroupComponent",
+              "properties": {
+                "component": "CompositeRadioButton",
+                "label": {
+                  "en-GB": "Politically Exposed Person ",
+                  "da-DK": "Politisk eksponeret person?",
+                  "fi-FI": "Poliittisesti vaikutusvaltainen henkilö"
+                }
+              },
+              "fields": {
+                "519100a2-d922-4e06-a701-6aaa77d148f5": {
+                  "weight": 0,
+                  "name": "Politically_Exposed_Person",
+                  "id": "Politically_Exposed_Person",
+                  "type": "radio",
+                  "component": "BaseButton",
+                  "properties": {
+                    "label": {
+                      "en-GB": "Politically Exposed Person (PEP)",
+                      "fi-FI": "Poliittisesti vaikuttava henkilö (PEP)",
+                      "da-DK": "Politisk eksponeret person (PEP)"
+                    },
+                    "placeholder": {
+                      "en-GB": "Are you a politically exposed person?",
+                      "fi-FI": "Oletko poliittisesti vaikuttava henkilö?",
+                      "da-DK": "Er du en politisk eksponeret person?"
+                    },
+                    "tooltip": {
+                      "en-GB": "Indicate if you are a politically exposed person.",
+                      "fi-FI": "Ilmoita, oletko poliittisesti vaikuttava henkilö.",
+                      "da-DK": "Angiv, om du er en politisk eksponeret person."
+                    },
+                    "error": {
+                      "en-GB": "Politically exposed person. It is a yes/no question.",
+                      "fi-FI": "Poliittisesti vaikutusvaltainen henkilö. Kysymys on kyllä/ei.",
+                      "da-DK": "Politisk udsat person. Det er et ja/nej spørgsmål."
+                    },
+                    "options": [
+                      {
+                        "value": true,
+                        "id": "Politically_Exposed_Person_true",
+                        "label": {
+                          "en-GB": "Yes",
+                          "da-DK": "Ja",
+                          "fi-FI": "Kyllä"
+                        },
+                        "weight": 0
+                      },
+                      {
+                        "value": false,
+                        "id": "Politically_Exposed_Person_false",
+                        "label": {
+                          "en-GB": "No",
+                          "da-DK": "Nej",
+                          "fi-FI": "Ei"
+                        },
+                        "weight": 1
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "f46079cc-1df8-4b7a-896b-83c6d0a2d0fc": {
+            "weight": -100,
+            "type": "widget",
+            "properties": {
+              "component": "PaginationNext",
+              "label": {
+                "en-GB": "next",
+                "da-DK": "næste",
+                "fi-FI": "Seuraava"
+              }
+            }
+          }
+        }
+      }
+    },
+    "cbca99f2-afb6-4293-b79d-123e1ce13b63": {
+      "weight": 1,
+      "type": "step",
+      "properties": {
+        "label": "2"
+      },
+      "sections": {
+        "a1c7b8c2-5d2e-4f14-9159-a3341a9de789": {
+          "weight": 0,
+          "type": "fieldgroups",
+          "properties": {
+            "component": "GroupComponent",
+            "label": {
+              "en-GB": "Occupation",
+              "da-DK": "Beskæftigelse",
+              "fi-FI": "Työllisyys"
+            }
+          },
+          "fieldgroups": {
+            "b224102f-2763-4a91-a116-11c64722f1c3": {
+              "weight": 1,
+              "type": "fieldgroup",
+              "properties": {
+                "component": "GroupButtons",
+                "label": {
+                  "en-GB": "Employment",
+                  "fi-FI": "Employment",
+                  "da-DK": "Employment"
+                }
+              },
+              "fields": {
+                "f6a7b8c9-6789-9cad-deef-f5a6b7c8d9e0": {
+                  "weight": 2,
+                  "name": "type_of_Employment",
+                  "id": "type_of_Employment",
+                  "type": "button",
+                  "properties": {
+                    "label": {
+                      "en-GB": "Type of Employment",
+                      "da-DK": "Ansættelsestype",
+                      "fi-FI": "Työsuhteen tyyppi"
+                    },
+                    "placeholder": {
+                      "en-GB": "Select your type of employment",
+                      "da-DK": "Vælg din ansættelsestype",
+                      "fi-FI": "Valitse työsuhteesi tyyppi"
+                    },
+                    "tooltip": {
+                      "en-GB": "Choose the type of employment that applies to you.",
+                      "da-DK": "Vælg den ansættelsestype, der gælder for dig. Vælg den ansættelsestype, der gælder for dig.",
+                      "fi-FI": "Valitse työsuhteen tyyppi, joka koskee sinua."
+                    },
+                    "error": {
+                      "en-GB": "Hey employment... what you do for money.",
+                      "da-DK": "Arbejde... det man gør for at tjene penge.",
+                      "fi-FI": "Hei työ... se mitä tehdään, että saa rahaa."
+                    },
+                    "options": [
+                      {
+                        "value": "type_of_employment_fulltime",
+                        "id": "type_of_employment_fulltime",
+                        "label": {
+                          "en-GB": "Permanent Job",
+                          "da-DK": "Fastansættelse",
+                          "fi-FI": "Pysyvä työ"
+                        },
+                        "weight": 0
+                      },
+                      {
+                        "value": "type_of_employment_selfemployed",
+                        "id": "type_of_employment_entrepreneur",
+                        "label": {
+                          "en-GB": "Self employed",
+                          "da-DK": "Selvstændig",
+                          "fi-FI": "Self employed"
+                        },
+                        "weight": 1
+                      },
+                      {
+                        "value": "type_of_employment_parttime",
+                        "id": "type_of_employment_parttime",
+                        "label": {
+                          "en-GB": "Part Time",
+                          "da-DK": "Deltid",
+                          "fi-FI": "part time"
+                        },
+                        "weight": 1
+                      },
+                      {
+                        "value": "type_of_employment_pensioner",
+                        "id": "type_of_employment_pensioner",
+                        "label": {
+                          "en-GB": "Pensioner",
+                          "da-DK": "Pensionist",
+                          "fi-FI": "Eläkeläinen"
+                        },
+                        "weight": 3
+                      },
+                      {
+                        "value": "type_of_employment_unemployed",
+                        "id": "type_of_employment_unemployed",
+                        "label": {
+                          "en-GB": "Unemployed",
+                          "da-DK": "Arbejdsledig",
+                          "fi-FI": "Työtön"
+                        },
+                        "weight": 4
+                      },
+                      {
+                        "value": "type_of_employment_student",
+                        "id": "type_of_employment_student",
+                        "label": {
+                          "en-GB": "Student",
+                          "da-DK": "Studerende",
+                          "fi-FI": "Opiskelija"
+                        },
+                        "weight": 5
+                      },
+                      {
+                        "value": "type_of_employment_temporary",
+                        "id": "type_of_employment_temp_job",
+                        "label": {
+                          "en-GB": "Temporary Job",
+                          "da-DK": "Midlertidigt job",
+                          "fi-FI": "Tilapäinen työ"
+                        },
+                        "weight": 9
+                      },
+                      {
+                        "value": "type_of_employment_other",
+                        "id": "type_of_employment_other",
+                        "label": {
+                          "en-GB": "Other",
+                          "da-DK": "Andet",
+                          "fi-FI": "Muu"
+                        },
+                        "weight": 10
+                      }
+                    ]
+                  }
+                },
+                "f46079cc-1df8-4b7a-896b-83c6d0a2d0fc": {
+                  "weight": 3,
+                  "type": "widget",
+                  "properties": {
+                    "component": "EmploymentSpecifics",
+                    "label": {
+                      "en-GB": "wuub",
+                      "da-DK": "huub",
+                      "fi-FI": "luub"
+                    }
+                  },
+                  "fields": {
+                    "1bcf4ad3-8f9e-34fe-aeb6-2c4e39c59100": {
+                      "weight": 1,
+                      "name": "Occupation_title",
+                      "id": "Occupation_title",
+                      "type": "text",
+                      "component": "CompositInput",
+                      "value": [
+                        "type_of_employment_fulltime",
+                        "type_of_employment_parttime",
+                        "type_of_employment_selfemployed",
+                        "type_of_employment_temporary"
+                      ],
+                      "properties": {
+                        "label": {
+                          "en-GB": "Occupation title",
+                          "da-DK": "Occupation title",
+                          "fi-FI": "Occupation title"
+                        },
+                        "placeholder": {
+                          "en-GB": "Your current Occupation title",
+                          "da-DK": "Your current Occupation title",
+                          "fi-FI": "Your current Occupation title"
+                        },
+                        "tooltip": {
+                          "en-GB": "Your current Occupation title",
+                          "da-DK": "Your current Occupation title",
+                          "fi-FI": "Your current Occupation title"
+                        },
+                        "error": {
+                          "en-GB": "",
+                          "da-DK": "",
+                          "fi-FI": ""
+                        }
+                      }
+                    },
+                    "1bcf4ad9-3f3e-94fe-aeb6-2c4e39c59100": {
+                      "weight": 2,
+                      "name": "Employer",
+                      "id": "text",
+                      "type": "text",
+                      "value": [
+                        "type_of_employment_fulltime",
+                        "type_of_employment_parttime",
+                        "type_of_employment_temporary",
+                        "type_of_employment_selfemployed",
+                        "type_of_employment_farmer",
+                        "type_of_employment_other"
+                      ],
+                      "component": "CompositInput",
+                      "properties": {
+                        "label": {
+                          "en-GB": "Employer / organization name",
+                          "da-DK": "Employer / organization name",
+                          "fi-FI": "Employer / organization name"
+                        },
+                        "placeholder": {
+                          "en-GB": "Your current company or organization name ",
+                          "da-DK": "Din nuværende virksomhed eller organisations navn",
+                          "fi-FI": "Nykyisen yrityksesi tai organisaatiosi nimi"
+                        },
+                        "tooltip": {
+                          "en-GB": "Your current company or organization name ",
+                          "da-DK": "Din nuværende virksomhed eller organisations navn",
+                          "fi-FI": "Nykyisen yrityksesi tai organisaatiosi nimi"
+                        },
+                        "error": {
+                          "en-GB": "",
+                          "da-DK": "",
+                          "fi-FI": ""
+                        }
+                      }
+                    },
+                    "9fcb4ad3-9d9e-33ec-aeb6-2c4e39c59100": {
+                      "weight": 3,
+                      "name": "employment_start_year_1",
+                      "id": "employment_start_year_1",
+                      "type": "text",
+                      "value": [
+                        "type_of_employment_fulltime",
+                        "type_of_employment_parttime",
+                        "type_of_employment_temporary",
+                        "type_of_employment_farmer",
+                        "type_of_employment_temporary",
+                        "type_of_employment_other"
+                      ],
+                      "component": "CompositInput",
+                      "properties": {
+                        "label": {
+                          "en-GB": "Employed since (year)",
+                          "da-DK": "Employed since (year)",
+                          "fi-FI": "Employed since (year)"
+                        },
+                        "placeholder": {
+                          "en-GB": "The year you started at your current job. ",
+                          "da-DK": "The year you started at your current job. ",
+                          "fi-FI": "The year you started at your current job. "
+                        },
+                        "tooltip": {
+                          "en-GB": "Please enter approximately the year when you started at your current job. Use 4 numbers, e.g '2002'.",
+                          "da-DK": "Please enter approximately the year when you started at your current job. Use 4 numbers, e.g '2002'.",
+                          "fi-FI": "Please enter approximately the year when you started at your current job. Use 4 numbers, e.g '2002'."
+                        },
+                        "error": {
+                          "en-GB": "",
+                          "da-DK": "",
+                          "fi-FI": ""
+                        }
+                      }
+                    },
+                    "5fcb9ad9-9d9e-33ec-aeb3-2c4e39c94100": {
+                      "weight": 3,
+                      "name": "Self_employed_since_year_1",
+                      "id": "Self_employed_since_year_1",
+                      "type": "text",
+                      "value": [
+                        "type_of_employment_selfemployed"
+                      ],
+                      "component": "CompositInput",
+                      "properties": {
+                        "label": {
+                          "en-GB": "Self employed since (year)",
+                          "da-DK": "Self employed since (year)",
+                          "fi-FI": "Self employed since (year)"
+                        },
+                        "placeholder": {
+                          "en-GB": "The year you started your self employment.",
+                          "da-DK": "The year you started your self employment.",
+                          "fi-FI": "The year you started your self employment."
+                        },
+                        "tooltip": {
+                          "en-GB": "Please enter approximately the year when you started self employment. Use 4 numbers, e.g '2002'.",
+                          "da-DK": "Please enter approximately the year when you started self employment. Use 4 numbers, e.g '2002'.",
+                          "fi-FI": "Please enter approximately the year when you started self employment. Use 4 numbers, e.g '2002'."
+                        },
+                        "error": {
+                          "en-GB": "",
+                          "da-DK": "",
+                          "fi-FI": ""
+                        }
+                      }
+                    },
+                    "5fcb6ad9-6d9e-36bd-aeb3-2c4e48c94100": {
+                      "weight": 3,
+                      "name": "Student_since_year_1",
+                      "id": "Student_since_year_1",
+                      "type": "text",
+                      "value": [
+                        "type_of_employment_student"
+                      ],
+                      "component": "CompositInput",
+                      "properties": {
+                        "label": {
+                          "en-GB": "Student since (year)",
+                          "da-DK": "Student since (year)",
+                          "fi-FI": "Student since (year)"
+                        },
+                        "placeholder": {
+                          "en-GB": "The year you started your studies.",
+                          "da-DK": "The year you started your studies.",
+                          "fi-FI": "The year you started your studies."
+                        },
+                        "tooltip": {
+                          "en-GB": "Please enter approximately the year you started your studies.. Use 4 numbers, e.g '2002'.",
+                          "da-DK": "Please enter approximately the year you started your studies.. Use 4 numbers, e.g '2002'.",
+                          "fi-FI": "Please enter approximately the year you started your studies.. Use 4 numbers, e.g '2002'."
+                        },
+                        "error": {
+                          "en-GB": "",
+                          "da-DK": "",
+                          "fi-FI": ""
+                        }
+                      }
+                    },
+                    "5fcb6ad9-6d9e-36gh-bcb6-8c2e14c94100": {
+                      "weight": 3,
+                      "name": "Unemployed_since_1",
+                      "id": "Unemployed_since_1",
+                      "type": "text",
+                      "value": [
+                        "type_of_employment_unemployed"
+                      ],
+                      "component": "CompositInput",
+                      "properties": {
+                        "label": {
+                          "en-GB": "unemployed since (year)",
+                          "da-DK": "unemployed since (year)",
+                          "fi-FI": "unemployed since (year)"
+                        },
+                        "placeholder": {
+                          "en-GB": "The year your unemployment strated.",
+                          "da-DK": "The year your unemployment strated.",
+                          "fi-FI": "The year your unemployment strated."
+                        },
+                        "tooltip": {
+                          "en-GB": "Please enter approximately the year your unemployment strated. Use 4 numbers, e.g '2002'.",
+                          "da-DK": "Please enter approximately the year your unemployment strated. Use 4 numbers, e.g '2002'.",
+                          "fi-FI": "Please enter approximately the yearyour unemployment strated. Use 4 numbers, e.g '2002'."
+                        },
+                        "error": {
+                          "en-GB": "",
+                          "da-DK": "",
+                          "fi-FI": ""
+                        }
+                      }
+                    },
+                    "1fcb7ad5-9d9e-11ec-aeb6-2c4e39c59909": {
+                      "weight": 4,
+                      "name": "employment_start_month_1",
+                      "id": "employment_start_month_1",
+                      "type": "text",
+                      "value": [
+                        "type_of_employment_fulltime",
+                        "type_of_employment_parttime",
+                        "type_of_employment_temporary",
+                        "type_of_employment_farmer",
+                        "type_of_employment_other"
+                      ],
+                      "component": "CompositInput",
+                      "properties": {
+                        "label": {
+                          "en-GB": "Start month of Employment",
+                          "da-DK": "Start month of Employment",
+                          "fi-FI": "Start month of Employment"
+                        },
+                        "placeholder": {
+                          "en-GB": "The month you started at your current job.",
+                          "da-DK": "The month you started at your current job.",
+                          "fi-FI": "The month you started at your current job."
+                        },
+                        "tooltip": {
+                          "en-GB": "Please select approximately the month that you started at your current job. If you don't know exactly, pick what you think it is.",
+                          "da-DK": "Please select approximately the month that you started at your current job. If you don't know exactly, pick what you think it is.",
+                          "fi-FI": "Please select approximately the month that you started at your current job. If you don't know exactly, pick what you think it is."
+                        },
+                        "error": {
+                          "en-GB": "",
+                          "da-DK": "",
+                          "fi-FI": ""
+                        }
+                      }
+                    },
+                    "1fcb4ad3-9d9e-31ec-aeb6-2c4e39c13000": {
+                      "weight": 5,
+                      "name": "Unemployed_since_year",
+                      "id": "Unemployed_since_year",
+                      "type": "text",
+                      "value": [
+                        "type_of_employment_unemployed"
+                      ],
+                      "component": "CompositInput",
+                      "properties": {
+                        "label": {
+                          "en-GB": "Start year of unemployment",
+                          "da-DK": "Start year of unemployment",
+                          "fi-FI": "Start year of unemployment"
+                        },
+                        "placeholder": {
+                          "en-GB": "Start year of unemployment",
+                          "da-DK": "Start year of unemployment",
+                          "fi-FI": "Start year of unemployment"
+                        },
+                        "tooltip": {
+                          "en-GB": "Please enter approximately the year when you startyed unemployment. Use 4 numbers, e.g '2002'.",
+                          "da-DK": "Please enter approximately the year when you startyed unemployment. Use 4 numbers, e.g '2002'.",
+                          "fi-FI": "Please enter approximately the year when you startyed unemployment. Use 4 numbers, e.g '2002'."
+                        },
+                        "error": {
+                          "en-GB": "",
+                          "da-DK": "",
+                          "fi-FI": ""
+                        }
+                      }
+                    },
+                    "1fcb4ad3-9d9e-33ec-aeb6-2c4e39c59100": {
+                      "weight": 6,
+                      "name": "employment_start_month_1",
+                      "id": "employment_start_month_1",
+                      "type": "text",
+                      "component": "CompositInput",
+                      "properties": {
+                        "label": {
+                          "en-GB": "Start month of unemployment",
+                          "da-DK": "Start month of unemployment",
+                          "fi-FI": "Start month of unemployment"
+                        },
+                        "placeholder": {
+                          "en-GB": "Start month of unemployment",
+                          "da-DK": "Start month of unemployment",
+                          "fi-FI": "Start month of unemployment"
+                        },
+                        "tooltip": {
+                          "en-GB": "Please enter approximately the month when you startyed unemployment. Use 4 numbers, e.g '2002'.",
+                          "da-DK": "Please enter approximately the month when you startyed unemployment. Use 4 numbers, e.g '2002'.",
+                          "fi-FI": "Please enter approximately the month when you startyed unemployment. Use 4 numbers, e.g '2002'."
+                        },
+                        "error": {
+                          "en-GB": "",
+                          "da-DK": "",
+                          "fi-FI": ""
+                        }
+                      }
+                    },
+                    "6fcb1ba4-9d9e-33ec-aeb6-2c4e39c59100": {
+                      "weight": 7,
+                      "name": "Employed_until_year",
+                      "id": "Employed_until_year",
+                      "type": "text",
+                      "value": [
+                        "type_of_employment_temporary"
+                      ],
+                      "component": "CompositInput",
+                      "properties": {
+                        "label": {
+                          "en-GB": "Employed until (year)",
+                          "da-DK": "Employed until (year)",
+                          "fi-FI": "Employed until (year)"
+                        },
+                        "placeholder": {
+                          "en-GB": "End year of employment",
+                          "da-DK": "End year of employment",
+                          "fi-FI": "End year of employment"
+                        },
+                        "tooltip": {
+                          "en-GB": "Please enter when your employment ends.",
+                          "da-DK": "Please enter when your employment ends.",
+                          "fi-FI": "Please enter when your employment ends."
+                        },
+                        "error": {
+                          "en-GB": "",
+                          "da-DK": "",
+                          "fi-FI": ""
+                        }
+                      }
+                    },
+                    "6fcb1ba4-9d9e-00ec-aeb6-2c4e93c59100": {
+                      "weight": 8,
+                      "name": "Employed_until_month",
+                      "id": "Employed_until_month",
+                      "type": "text",
+                      "value": [
+                        "type_of_employment_temporary"
+                      ],
+                      "component": "CompositInput",
+                      "properties": {
+                        "label": {
+                          "en-GB": "Employed until (month)",
+                          "da-DK": "Employed until (month)",
+                          "fi-FI": "Employed until (month)"
+                        },
+                        "placeholder": {
+                          "en-GB": "End month of employment",
+                          "da-DK": "End mont of employment",
+                          "fi-FI": "End month of employment"
+                        },
+                        "tooltip": {
+                          "en-GB": "Please enter what month your employment ends.",
+                          "da-DK": "Please enter what month your employment ends.",
+                          "fi-FI": "Please enter what month your employment ends."
+                        },
+                        "error": {
+                          "en-GB": "",
+                          "da-DK": "",
+                          "fi-FI": ""
+                        }
+                      }
+                    },
+                    "0bcf1ba4-9d9e-00ec-aeb6-2c4e93c59106": {
+                      "weight": 8,
+                      "name": "Retired_since_year",
+                      "id": "Retired_since_year",
+                      "type": "text",
+                      "value": [
+                        "type_of_employment_pensioner"
+                      ],
+                      "component": "CompositInput",
+                      "properties": {
+                        "label": {
+                          "en-GB": "Retirement year",
+                          "da-DK": "Retirement year",
+                          "fi-FI": "Retirement year"
+                        },
+                        "placeholder": {
+                          "en-GB": "Year of your Retirement",
+                          "da-DK": "Year of your Retirement",
+                          "fi-FI": "Year of your Retirement"
+                        },
+                        "tooltip": {
+                          "en-GB": "Please enter approximately the year when you started at your retirement. Use 4 numbers, e.g '2002'.",
+                          "da-DK": "Please enter approximately the year when you started at your retirement. Use 4 numbers, e.g '2002'.",
+                          "fi-FI": "Please enter approximately the year when you started at your retirement. Use 4 numbers, e.g '2002'."
+                        },
+                        "error": {
+                          "en-GB": "",
+                          "da-DK": "",
+                          "fi-FI": ""
+                        }
+                      }
+                    },
+                    "0efg2cd5-9d7e-00ec-eax4-1c2e41c25601": {
+                      "weight": 8,
+                      "name": "Monthly_income_before_taxes",
+                      "id": "Monthly_income_before_taxes",
+                      "type": "currency",
+                      "value": [
+                        "type_of_employment_pensioner",
+                        "type_of_employment_student",
+                        "type_of_employment_unemployed",
+                        "type_of_employment_selfemployed",
+                        "type_of_employment_parttime",
+                        "type_of_employment_fulltime"
+                      ],
+                      "component": "CompositInput",
+                      "properties": {
+                        "label": {
+                          "en-GB": "Monthly income before taxes",
+                          "da-DK": "Monthly income before taxes",
+                          "fi-FI": "Monthly income before taxes"
+                        },
+                        "placeholder": {
+                          "en-GB": "Your monthly income before taxes",
+                          "da-DK": "Your monthly income before taxes",
+                          "fi-FI": "Your monthly income before taxes"
+                        },
+                        "tooltip": {
+                          "en-GB": "Please enter approximately Your monthly income before taxes",
+                          "da-DK": "Please enter approximately Your monthly income before taxes",
+                          "fi-FI": "Please enter approximately Your monthly income before taxes"
+                        },
+                        "error": {
+                          "en-GB": "",
+                          "da-DK": "",
+                          "fi-FI": ""
+                        }
+                      }
+                    },
+                    "9hgi2cd3-5d2f-11ec-eax4-1c2e41c25601": {
+                      "weight": 9,
+                      "name": "Monthly_income_after_taxes",
+                      "id": "Monthly_income_after_taxes",
+                      "value": [
+                        "type_of_employment_pensioner",
+                        "type_of_employment_student",
+                        "type_of_employment_unemployed",
+                        "type_of_employment_selfemployed",
+                        "type_of_employment_parttime",
+                        "type_of_employment_fulltime"
+                      ],
+                      "type": "currency",
+                      "component": "CompositInput",
+                      "properties": {
+                        "label": {
+                          "en-GB": "Monthly income after taxes",
+                          "da-DK": "Monthly income after taxes",
+                          "fi-FI": "Monthly income after taxes"
+                        },
+                        "placeholder": {
+                          "en-GB": "Your monthly income after taxes",
+                          "da-DK": "Your monthly income after taxes",
+                          "fi-FI": "Your monthly income after taxes"
+                        },
+                        "tooltip": {
+                          "en-GB": "Please enter approximately Your monthly income after taxes",
+                          "da-DK": "Please enter approximately Your monthly income after taxes",
+                          "fi-FI": "Please enter approximately Your monthly income after taxes"
+                        },
+                        "error": {
+                          "en-GB": "",
+                          "da-DK": "",
+                          "fi-FI": ""
+                        }
+                      }
+                    },
+                    "73d62061-g940-59a2-bf27-94a49fbe06fd": {
+                      "weight": 10,
+                      "name": "Position",
+                      "id": "Position",
+                      "type": "hiddenbuttonGroup",
+                      "value": [
+                        "type_of_employment_fulltime",
+                        "type_of_employment_parttime",
+                        "type_of_employment_temporary",
+                        "type_of_employment_selfemployed",
+                        "type_of_employment_farmer",
+                        "type_of_employment_student"
+                      ],
+                      "component": "GroupButtons",
+                      "properties": {
+                        "label": {
+                          "en-GB": "Position",
+                          "da-DK": "Position",
+                          "fi-FI": "Position"
+                        },
+                        "placeholder": {
+                          "en-GB": "Select your type of Position",
+                          "da-DK": "Select your type of Position",
+                          "fi-FI": "Select your type of Position"
+                        },
+                        "tooltip": {
+                          "en-GB": "Choose the type of Position that applies to you.",
+                          "da-DK": "Choose the type of Position that applies to you",
+                          "fi-FI": "Choose the type of Position that applies to you"
+                        },
+                        "error": {
+                          "en-GB": "Hey employment... what you do for money.",
+                          "da-DK": "Arbejde... det man gør for at tjene penge.",
+                          "fi-FI": "Hei työ... se mitä tehdään, että saa rahaa."
+                        },
+                        "options": [
+                          {
+                            "value": "position_employee",
+                            "id": "Employee",
+                            "label": {
+                              "en-GB": "Employee",
+                              "da-DK": "Employee",
+                              "fi-FI": "Employee"
+                            },
+                            "weight": 0
+                          },
+                          {
+                            "value": "position_upper_managerial",
+                            "id": "upper_managerial",
+                            "label": {
+                              "en-GB": "Upper managerial",
+                              "da-DK": "Upper managerial",
+                              "fi-FI": "Upper managerial"
+                            },
+                            "weight": 1
+                          },
+                          {
+                            "value": "position_lower_managerial",
+                            "id": "lower_managerial",
+                            "label": {
+                              "en-GB": "Lower managerial",
+                              "da-DK": "Lower managerial",
+                              "fi-FI": "Lower managerial"
+                            },
+                            "weight": 3
+                          },
+                          {
+                            "value": "position_leader",
+                            "id": "leader",
+                            "label": {
+                              "en-GB": "leader",
+                              "da-DK": "leader",
+                              "fi-FI": "leader"
+                            },
+                            "weight": 4
+                          },
+                          {
+                            "value": "position_pensioner",
+                            "id": "pensioner",
+                            "label": {
+                              "en-GB": "pensioner",
+                              "da-DK": "pensioner",
+                              "fi-FI": "pensioner"
+                            },
+                            "weight": 5
+                          },
+                          {
+                            "value": "position_entrepreneur",
+                            "id": "entrepreneur",
+                            "label": {
+                              "en-GB": "Entrepreneur",
+                              "da-DK": "Entrepreneur",
+                              "fi-FI": "Entrepreneur"
+                            },
+                            "weight": 7
+                          },
+                          {
+                            "value": "position_student",
+                            "id": "student",
+                            "label": {
+                              "en-GB": "Student",
+                              "da-DK": "Student",
+                              "fi-FI": "Student"
+                            },
+                            "weight": 8
+                          },
+                          {
+                            "value": "position_other",
+                            "id": "other",
+                            "label": {
+                              "en-GB": "Other",
+                              "da-DK": "Other",
+                              "fi-FI": "Other"
+                            },
+                            "weight": 9
+                          }
+                        ]
+                      }
+                    },
+                    "f6a7b8c9-8967-9dac-dfff-f5b6b7d8c9e0": {
+                      "weight": 3,
+                      "name": "occupationcategory",
+                      "id": "occupation_category",
+                      "type": "button",
+                      "properties": {
+                        "label": {
+                          "en-GB": "Occupation category",
+                          "da-DK": "Erhvervskategori",
+                          "fi-FI": "Occupation category"
+                        },
+                        "placeholder": {
+                          "en-GB": "Select your Position",
+                          "da-DK": "Vælg din Stilling",
+                          "fi-FI": "Position"
+                        },
+                        "tooltip": {
+                          "en-GB": "Choose the type of Position that applies to you.",
+                          "da-DK": "Choose the type of Position that applies to you..",
+                          "fi-FI": "Choose the type of Position that applies to you."
+                        },
+                        "error": {
+                          "en-GB": "Position error",
+                          "da-DK": "Position error",
+                          "fi-FI": "Position error"
+                        },
+                        "options": [
+                          {
+                            "value": "occupation_employee",
+                            "id": "occupation_employee",
+                            "label": {
+                              "en-GB": "Employee",
+                              "da-DK": "ansat",
+                              "fi-FI": "employee"
+                            },
+                            "weight": 0
+                          },
+                          {
+                            "value": "occupation_upper_managerial",
+                            "id": "occupation_upper_managerial",
+                            "label": {
+                              "en-GB": "Upper managerial",
+                              "da-DK": "Øverste ledelse",
+                              "fi-FI": "Upper managerial"
+                            },
+                            "weight": 1
+                          },
+                          {
+                            "value": "occupation_lower_managerial",
+                            "id": "occupation_lower_managerial",
+                            "label": {
+                              "en-GB": "Lower managerial",
+                              "da-DK": "Lavere ledelse",
+                              "fi-FI": "Lower managerial"
+                            },
+                            "weight": 3
+                          },
+                          {
+                            "value": "occupation_leader",
+                            "id": "occupation_leader",
+                            "label": {
+                              "en-GB": "Leader",
+                              "da-DK": "Leder",
+                              "fi-FI": "Leader"
+                            },
+                            "weight": 4
+                          },
+                          {
+                            "value": "occupation_Pensioner",
+                            "id": "occupation_pensioner",
+                            "label": {
+                              "en-GB": "Pensioner",
+                              "da-DK": "pensionist",
+                              "fi-FI": "Pensioner"
+                            },
+                            "weight": 5
+                          },
+                          {
+                            "value": "occupation_entrepreneur",
+                            "id": "occupation_entrepreneur",
+                            "label": {
+                              "en-GB": "Entrepreneur",
+                              "da-DK": "Entrepreneur",
+                              "fi-FI": "Entrepreneur"
+                            },
+                            "weight": 7
+                          },
+                          {
+                            "value": "occupation_student",
+                            "id": "occupation_student",
+                            "label": {
+                              "en-GB": "Student",
+                              "da-DK": "Studerende",
+                              "fi-FI": "Student"
+                            },
+                            "weight": 8
+                          },
+                          {
+                            "value": "occupation_other",
+                            "id": "occupation_other",
+                            "label": {
+                              "en-GB": "Other",
+                              "da-DK": "Other",
+                              "fi-FI": "Other"
+                            },
+                            "weight": 9
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                "56b289a3-fdb1-4d32-aa76-0cee6044ffc9": {
+                  "weight": 4,
+                  "type": "",
+                  "name": "has_other_income_",
+                  "id": "has_other_income_",
+                  "properties": {
+                    "label": {
+                      "en-GB": "Other Sources of Income",
+                      "da-DK": "Andre Indkomstkilder",
+                      "fi-FI": "Muita Tulonlähteitä"
+                    }
+                  },
+                  "fields": {
+                    "ba8e16dd-c1e8-4145-9c00-19ed6803322e": {
+                      "weight": 5,
+                      "name": "has_other_income",
+                      "id": "has_other_income",
+                      "type": "radio",
+                      "properties": {
+                        "component": "CompositeRadioButton",
+                        "label": {
+                          "en-GB": "Do you have other sources of income?",
+                          "da-DK": "Har du andre indkomstkilder?",
+                          "fi-FI": "Onko sinulla muita tulonlähteitä?"
+                        },
+                        "placeholder": {
+                          "en-GB": "Select if you have other sources of income",
+                          "da-DK": "Vælg, om du har andre indkomstkilder",
+                          "fi-FI": "Valitse, onko sinulla muita tulonlähteitä"
+                        },
+                        "tooltip": {
+                          "en-GB": "Indicate whether you have income from other sources.",
+                          "da-DK": "Angiv, om du har indkomst fra andre kilder.",
+                          "fi-FI": "Ilmoita, onko sinulla tuloja muista lähteistä."
+                        },
+                        "error": {
+                          "en-GB": "So you perform at OnlyPanths but are ashamed to say.",
+                          "da-DK": "Så du optræder på OnlyPanths, men skammer dig over at sige det.",
+                          "fi-FI": "Eli esiinnyt OnlyPanthsissa, mutta häpeät myöntää sen."
+                        },
+                        "options": [
+                          {
+                            "value": true,
+                            "id": "has_other_income_true",
+                            "label": {
+                              "en-GB": "Yes",
+                              "da-DK": "Ja",
+                              "fi-FI": "Kyllä"
+                            },
+                            "weight": 0
+                          },
+                          {
+                            "value": false,
+                            "id": "has_other_income_false",
+                            "label": {
+                              "en-GB": "No",
+                              "da-DK": "Nej",
+                              "fi-FI": "Ei"
+                            },
+                            "weight": 0
+                          }
+                        ]
+                      }
+                    },
+                    "1b3111d1-fa20-4c0f-b4b4-c3eae4e21e1b": {
+                      "weight": 6,
+                      "type": "fieldSubGroup",
+                      "visibility": {
+                        "dependsOn": "has_other_income",
+                        "value": true
+                      },
+                      "fields": {
+                        "bf16f803-76f0-437e-b2ff-24c05c6d8ec9": {
+                          "weight": 1,
+                          "name": "gross_monthly_additional_income",
+                          "id": "gross_monthly_additional_income",
+                          "type": "currency",
+                          "properties": {
+                            "component": "CompositInput",
+                            "label": {
+                              "en-GB": "Gross Monthly Additional Income",
+                              "da-DK": "Brutto Månedlig Supplerende Indkomst",
+                              "fi-FI": "Bruttokuukausittainen Lisätulo"
+                            },
+                            "placeholder": {
+                              "en-GB": "Enter your gross monthly additional income",
+                              "da-DK": "Indtast din brutto månedlige supplerende indkomst",
+                              "fi-FI": "Syötä bruttokuukausittainen lisätulosi"
+                            },
+                            "tooltip": {
+                              "en-GB": "Your total additional income before taxes and deductions.",
+                              "da-DK": "Din samlede supplerende indkomst før skat og fradrag.",
+                              "fi-FI": "Kokonaistulosi ennen veroja ja vähennyksiä."
+                            },
+                            "error": {
+                              "en-GB": "you total bum.",
+                              "da-DK": "kæmpe bums.",
+                              "fi-FI": "Sä oot ihan täysi renttu."
+                            }
+                          }
+                        },
+                        "7a26989b-c503-4eeb-a8b3-588b8b77df41": {
+                          "weight": 2,
+                          "name": "net_monthly_additional_income",
+                          "id": "net_monthly_additional_income",
+                          "type": "currency",
+                          "properties": {
+                            "component": "CompositInput",
+                            "label": {
+                              "en-GB": "Net Monthly Additional Income",
+                              "da-DK": "Netto Månedlig Supplerende Indkomst",
+                              "fi-FI": "Nettokuukausittainen Lisätulo"
+                            },
+                            "placeholder": {
+                              "en-GB": "Enter your net monthly additional income",
+                              "da-DK": "Indtast din netto månedlige supplerende indkomst",
+                              "fi-FI": "Syötä nettokuukausittainen lisätulosi"
+                            },
+                            "tooltip": {
+                              "en-GB": "Your additional income after taxes and deductions.",
+                              "da-DK": "Din supplerende indkomst efter skat og fradrag.",
+                              "fi-FI": "Lisätulosi verojen ja vähennysten jälkeen."
+                            },
+                            "error": {
+                              "en-GB": "wafflebut you forgot something about taxes and deductions.",
+                              "da-DK": "kæmpe mølle, du har glemt noget om skat og fradrag.",
+                              "fi-FI": "Sä saatana, unohdit jotain veroista ja vähennyksistä."
+                            }
+                          }
+                        },
+                        "f6a7b8c9-6711-9cad-deef-f2a6b7c3d9e0": {
+                          "weight": 2,
+                          "name": "FART additional_income",
+                          "id": "additional_income",
+                          "type": "button",
+                          "properties": {
+                            "component": "GroupButtons",
+                            "label": {
+                              "en-GB": "Type of additional income",
+                              "da-DK": "Ansættelsestype",
+                              "fi-FI": "Työsuhteen tyyppi"
+                            },
+                            "placeholder": {
+                              "en-GB": "Select yourType of additional income",
+                              "da-DK": "Vælg din ansættelsestype",
+                              "fi-FI": "Valitse työsuhteesi tyyppi"
+                            },
+                            "tooltip": {
+                              "en-GB": "Choose the type of employment that applies to you.",
+                              "da-DK": "Vælg den ansættelsestype, der gælder for dig. Vælg den ansættelsestype, der gælder for dig.",
+                              "fi-FI": "Valitse työsuhteen tyyppi, joka koskee sinua."
+                            },
+                            "error": {
+                              "en-GB": "Hey employment... what you do for money.",
+                              "da-DK": "Arbejde... det man gør for at tjene penge.",
+                              "fi-FI": "Hei työ... se mitä tehdään, että saa rahaa."
+                            },
+                            "options": [
+                              {
+                                "value": "additional_fulltime",
+                                "id": "additional_employment_fulltime",
+                                "label": {
+                                  "en-GB": "Permanent Job",
+                                  "da-DK": "Fastansættelse",
+                                  "fi-FI": "Pysyvä työ"
+                                },
+                                "weight": 0
+                              },
+                              {
+                                "value": "additional_selfemployed",
+                                "id": "additional_employment_entrepreneur",
+                                "label": {
+                                  "en-GB": "Self employed",
+                                  "da-DK": "Selvstændig",
+                                  "fi-FI": "Self employed"
+                                },
+                                "weight": 1
+                              },
+                              {
+                                "value": "additional_parttime",
+                                "id": "additional_employment_parttime",
+                                "label": {
+                                  "en-GB": "Part Time",
+                                  "da-DK": "Deltid",
+                                  "fi-FI": "part time"
+                                },
+                                "weight": 1
+                              },
+                              {
+                                "value": "additional_pensioner",
+                                "id": "additional_employment_pensioner",
+                                "label": {
+                                  "en-GB": "Pensioner",
+                                  "da-DK": "Pensionist",
+                                  "fi-FI": "Eläkeläinen"
+                                },
+                                "weight": 3
+                              },
+                              {
+                                "value": "additional_unemployed",
+                                "id": "additional_employment_unemployed",
+                                "label": {
+                                  "en-GB": "Unemployed",
+                                  "da-DK": "Arbejdsledig",
+                                  "fi-FI": "Työtön"
+                                },
+                                "weight": 4
+                              },
+                              {
+                                "value": "additional_student",
+                                "id": "additional_employment_student",
+                                "label": {
+                                  "en-GB": "Student",
+                                  "da-DK": "Studerende",
+                                  "fi-FI": "Opiskelija"
+                                },
+                                "weight": 5
+                              },
+                              {
+                                "value": "additional_temporary",
+                                "id": "additional_employment_temp_job",
+                                "label": {
+                                  "en-GB": "Temporary Job",
+                                  "da-DK": "Midlertidigt job",
+                                  "fi-FI": "Tilapäinen työ"
+                                },
+                                "weight": 9
+                              },
+                              {
+                                "value": "additional_other",
+                                "id": "additional_employment_other",
+                                "label": {
+                                  "en-GB": "Other",
+                                  "da-DK": "Andet",
+                                  "fi-FI": "Muu"
+                                },
+                                "weight": 10
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "ebaa12f2-efb7-4932-b79d-123e1ce13b63": {
+      "weight": 2,
+      "type": "step",
+      "properties": {
+        "label": "3"
+      },
+      "sections": {
+        "a1c7b8c2-5d2e-4f14-9435-a6641a9de100": {
+          "weight": 0,
+          "type": "fieldgroups",
+          "properties": {
+            "label": {
+              "en-GB": "Housing Situation",
+              "da-DK": "Housing Situation",
+              "fi-FI": "Housing Situation"
+            }
+          },
+          "fieldgroups": {
+            "b334102f-6444-4a91-e6116-66c64722f1c3": {
+              "weight": 1,
+              "type": "fieldgroup",
+              "properties": {
+                "component": "GroupButtons",
+                "label": {
+                  "en-GB": "Type of Housing",
+                  "fi-FI": "Type of Housing",
+                  "da-DK": "Type of Housing"
+                }
+              },
+              "fields": {
+                "f6a7b8c9-5572-9cad-deef-f5d6b7a8d1e9": {
+                  "weight": 0,
+                  "name": "housing",
+                  "id": "housing",
+                  "type": "button",
+                  "properties": {
+                    "label": {
+                      "en-GB": "Type of Housing",
+                      "da-DK": "Type of Housing",
+                      "fi-FI": "Type of Housing"
+                    },
+                    "placeholder": {
+                      "en-GB": "Select your type of Housing",
+                      "da-DK": "Select your type of Housing",
+                      "fi-FI": "Select your type of Housing"
+                    },
+                    "tooltip": {
+                      "en-GB": "Choose the type of housing that applies to you.",
+                      "da-DK": "Choose the type of housing that applies to you..",
+                      "fi-FI": "Choose the type of housing that applies to you."
+                    },
+                    "error": {
+                      "en-GB": "You to need to specify a place of occupancy.",
+                      "da-DK": "You to need to specify a place of occupancy.",
+                      "fi-FI": "You to need to specify a place of occupancy."
+                    },
+                    "options": [
+                      {
+                        "value": "type_of_housing_co-housing",
+                        "id": "type_of_housing_co-housing",
+                        "label": {
+                          "en-GB": "Co-housing",
+                          "da-DK": "Co-housing",
+                          "fi-FI": "Co-housing"
+                        },
+                        "weight": 0
+                      },
+                      {
+                        "value": "type_of_housing_employee_housing",
+                        "id": "type_of_housing_employee_housing",
+                        "label": {
+                          "en-GB": "Employee housing",
+                          "da-DK": "Employee housing",
+                          "fi-FI": "Employee housing"
+                        },
+                        "weight": 1
+                      },
+                      {
+                        "value": "type_of_housing_partners_house",
+                        "id": "type_of_housing_partners_house",
+                        "label": {
+                          "en-GB": "Partners house",
+                          "da-DK": "Partners house",
+                          "fi-FI": "Partners house"
+                        },
+                        "weight": 1
+                      },
+                      {
+                        "value": "type_of_housing_rental",
+                        "id": "type_of_housing_rental",
+                        "label": {
+                          "en-GB": "Rental",
+                          "da-DK": "Rental",
+                          "fi-FI": "Rental"
+                        },
+                        "weight": 3
+                      },
+                      {
+                        "value": "type_of_housing_parents",
+                        "id": "type_of_housing_parents",
+                        "label": {
+                          "en-GB": "Parents",
+                          "da-DK": "Parents",
+                          "fi-FI": "Parents"
+                        },
+                        "weight": 4
+                      },
+                      {
+                        "value": "type_of_housing_own_house_apartment",
+                        "id": "type_of_housing_own_house_apartment",
+                        "label": {
+                          "en-GB": "Own house/apartment",
+                          "da-DK": "Own house/apartment",
+                          "fi-FI": "Own house/apartment"
+                        },
+                        "weight": 5
+                      },
+                      {
+                        "value": "type_of_housing_right_of_occupancy",
+                        "id": "type_of_housing_right_of_occupancy",
+                        "label": {
+                          "en-GB": "Right of occupancy",
+                          "da-DK": "Right of occupancy",
+                          "fi-FI": "Right of occupancy"
+                        },
+                        "weight": 9
+                      },
+                      {
+                        "value": "type_of_housing_other_housing",
+                        "id": "type_of_housing_other_housing",
+                        "label": {
+                          "en-GB": "Other",
+                          "da-DK": "Andet",
+                          "fi-FI": "Muu"
+                        },
+                        "weight": 10
+                      }
+                    ]
+                  }
+                },
+                "e46025cc-1df8-4b7a-146b-83e6d0f2d0ad": {
+                  "weight": 3,
+                  "type": "widget",
+                  "properties": {
+                    "component": "HousingSpecifics",
+                    "label": {
+                      "en-GB": "HousingSpecifics",
+                      "da-DK": "HousingSpecifics",
+                      "fi-FI": "HousingSpecifics"
+                    }
+                  },
+                  "fields": {
+                    "73d62061-g940-59a2-bf27-94a49fbe06fd": {
+                      "weight": 1,
+                      "name": "type_of_housing",
+                      "id": "type_of_housing",
+                      "type": "hiddenbuttonGroup",
+                      "component": "GroupButtons",
+                      "value": [
+                        "type_of_housing_own_house_apartment"
+                      ],
+                      "properties": {
+                        "label": {
+                          "en-GB": "Type of housing",
+                          "da-DK": "Type of housing",
+                          "fi-FI": "Type of housing"
+                        },
+                        "placeholder": {
+                          "en-GB": "Select your type of housing",
+                          "da-DK": "Select your type of housing",
+                          "fi-FI": "Select your type of housing"
+                        },
+                        "tooltip": {
+                          "en-GB": "Choose the type of housing that applies to you.",
+                          "da-DK": "Choose the type of housing that applies to you",
+                          "fi-FI": "Choose the type of housing that applies to you"
+                        },
+                        "error": {
+                          "en-GB": "housing?.",
+                          "da-DK": "housing?.",
+                          "fi-FI": "housing?."
+                        },
+                        "options": [
+                          {
+                            "value": "high-rise",
+                            "id": "high-rise",
+                            "label": {
+                              "en-GB": "High-rise",
+                              "da-DK": "High-rise",
+                              "fi-FI": "High-rise"
+                            },
+                            "weight": 0
+                          },
+                          {
+                            "value": "house",
+                            "id": "house",
+                            "label": {
+                              "en-GB": "House",
+                              "da-DK": "House",
+                              "fi-FI": "House"
+                            },
+                            "weight": 1
+                          },
+                          {
+                            "value": "townhouse",
+                            "id": "townhouse",
+                            "label": {
+                              "en-GB": "Townhouse",
+                              "da-DK": "Townhouse",
+                              "fi-FI": "Townhouse"
+                            },
+                            "weight": 3
+                          },
+                          {
+                            "value": "type_of_housing_Other",
+                            "id": "type_of_housing_Other",
+                            "label": {
+                              "en-GB": "Other",
+                              "da-DK": "Other",
+                              "fi-FI": "Other"
+                            },
+                            "weight": 4
+                          }
+                        ]
+                      }
+                    },
+                    "1bcf4ad9-3f3e-94fe-aeb6-2c4e39c59100": {
+                      "weight": 2,
+                      "name": "Monthl_fees",
+                      "id": "Monthl_fees",
+                      "type": "text",
+                      "value": [
+                        "type_of_housing_co-housing",
+                        "type_of_housing_employee_housing",
+                        "type_of_housing_partners_house",
+                        "type_of_housing_parents",
+                        "type_of_housing_own_house_apartment",
+                        "type_of_housing_right_of_occupancy",
+                        "type_of_housing_other_housing"
+                      ],
+                      "component": "CompositInput",
+                      "properties": {
+                        "label": {
+                          "en-GB": "Monthly fees for housing",
+                          "da-DK": "Monthly fees for housing",
+                          "fi-FI": "Monthly fees for housing"
+                        },
+                        "placeholder": {
+                          "en-GB": "Your Monthly fees for housing",
+                          "da-DK": "Your Monthly fees for housing",
+                          "fi-FI": "Your Monthly fees for housing"
+                        },
+                        "tooltip": {
+                          "en-GB": "Your Monthly fees for housing, rent/fee, heat, water, electricity, insurance etc. NOTE: this does not include mortgage/loan costs.",
+                          "da-DK": "Your Monthly fees for housing, rent/fee, heat, water, electricity, insurance etc. NOTE: this does not include mortgage/loan costs.",
+                          "fi-FI": "Your Monthly fees for housing, rent/fee, heat, water, electricity, insurance etc. NOTE: this does not include mortgage/loan costs."
+                        },
+                        "error": {
+                          "en-GB": "",
+                          "da-DK": "",
+                          "fi-FI": ""
+                        }
+                      }
+                    },
+                    "2bcf4eb9-3f3e-35fe-bea6-2e4a39d00957": {
+                      "weight": 3,
+                      "name": "monthly_consumption",
+                      "id": "monthly_consumption",
+                      "type": "text",
+                      "value": [
+                        "type_of_housing_co-housing",
+                        "type_of_housing_employee_housing",
+                        "type_of_housing_partners_house",
+                        "type_of_housing_parents",
+                        "type_of_housing_own_house_apartment",
+                        "type_of_housing_right_of_occupancy",
+                        "type_of_housing_other_housing"
+                      ],
+                      "component": "CompositInput",
+                      "properties": {
+                        "label": {
+                          "en-GB": "Monthly consumption of the household",
+                          "da-DK": "Monthly consumption of the household",
+                          "fi-FI": "Monthly consumption of the household"
+                        },
+                        "placeholder": {
+                          "en-GB": "Your Monthly consumption of the household",
+                          "da-DK": "Your Monthly consumption of the household",
+                          "fi-FI": "Your Monthly consumption of the household"
+                        },
+                        "tooltip": {
+                          "en-GB": "Please enter the monthly cost connected to your other living costs besides housing.",
+                          "da-DK": "Please enter the monthly cost connected to your other living costs besides housing.",
+                          "fi-FI": "Please enter the monthly cost connected to your other living costs besides housing."
+                        },
+                        "error": {
+                          "en-GB": "",
+                          "da-DK": "",
+                          "fi-FI": ""
+                        }
+                      }
+                    },
+                    "2bcf4eb9-3f3e-45fe-aeb6-2f4e39c95001": {
+                      "weight": 4,
+                      "name": "type_of_apartment_housing",
+                      "id": "type_of_apartment_housing",
+                      "type": "text",
+                      "value": [
+                        "type_of_housing_other_housing"
+                      ],
+                      "component": "CompositInput",
+                      "properties": {
+                        "label": {
+                          "en-GB": "type of apartment/housing",
+                          "da-DK": "type of apartment/housing",
+                          "fi-FI": "type of apartment/housing"
+                        },
+                        "placeholder": {
+                          "en-GB": "Enter the type of apartment/housing",
+                          "da-DK": "Enter the type of apartment/housing",
+                          "fi-FI": "Enter the type of apartment/housing"
+                        },
+                        "tooltip": {
+                          "en-GB": "Hobbit house or treehut lets us know what kind of dwelling you have.",
+                          "da-DK": "Hobbit house or treehut lets us know what kind of dwelling you have.",
+                          "fi-FI": "Hobbit house or treehut lets us know what kind of dwelling you have."
+                        },
+                        "error": {
+                          "en-GB": "even a cardboardbox counts, but you need to fill this in",
+                          "da-DK": "even a cardboardbox counts, but you need to fill this in",
+                          "fi-FI": "even a cardboardbox counts, but you need to fill this in"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "56b289a3-fdb1-4d32-aa76-0cee6044ffc9": {
+              "weight": 4,
+              "type": "fieldgroup",
+              "name": "has_summerhouse",
+              "id": "has_summerhouse",
+              "properties": {
+                "component": "CompositeRadioButton",
+                "label": {
+                  "en-GB": "has_summerhouse",
+                  "da-DK": "has_summerhouse",
+                  "fi-FI": "has_summerhouse"
+                }
+              },
+              "fields": {
+                "ba8e16dd-c1e8-4145-9c00-19ed6803322e": {
+                  "weight": 5,
+                  "name": "has_summerhouse",
+                  "id": "has_summerhouse",
+                  "type": "radio",
+                  "properties": {
+                    "component": "CompositeRadioButton",
+                    "label": {
+                      "en-GB": "Do you own a sommerhouse",
+                      "da-DK": "Do you own a sommerhouse",
+                      "fi-FI": "Do you own a sommerhouse"
+                    },
+                    "placeholder": {
+                      "en-GB": "Do you own a summerhouse/cottage or any other vacation home?",
+                      "da-DK": "Do you own a summerhouse/cottage or any other vacation home?",
+                      "fi-FI": "Do you own a summerhouse/cottage or any other vacation home?"
+                    },
+                    "tooltip": {
+                      "en-GB": "are you the owner of a summerhouse/cottage or any other vacation home.",
+                      "da-DK": "are you the owner of a summerhouse/cottage or any other vacation home..",
+                      "fi-FI": "are you the owner of a summerhouse/cottage or any other vacation home."
+                    },
+                    "error": {
+                      "en-GB": "summerhouse/cottage error.",
+                      "da-DK": "summerhouse/cottage error",
+                      "fi-FI": "summerhouse/cottage error"
+                    },
+                    "options": [
+                      {
+                        "value": true,
+                        "id": "has_summerhouse_true",
+                        "label": {
+                          "en-GB": "Yes",
+                          "da-DK": "Ja",
+                          "fi-FI": "Kyllä"
+                        },
+                        "weight": 0
+                      },
+                      {
+                        "value": false,
+                        "id": "has_summerhouse_false",
+                        "label": {
+                          "en-GB": "No",
+                          "da-DK": "Nej",
+                          "fi-FI": "Ei"
+                        },
+                        "weight": 0
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "dbca83f2-afb6-4923-b79d-232e1ce13b54": {
+      "weight": 3,
+      "type": "step",
+      "properties": {
+        "label": "4"
+      },
+      "sections": {
+        "327cd00c-577a-4e9f-9fc0-235e435820bb": {
+          "$comment": "This section is for Economic situation",
+          "weight": 1,
+          "type": "fieldgroup",
+          "properties": {
+            "label": {
+              "en-GB": "Economic situation",
+              "da-DK": "Economic situation",
+              "fi-FI": "Economic situation"
+            }
+          },
+          "fieldgroups": {
+            "b422202fA-6444-5a71-e6776-66A64722f1c3": {
+              "weight": 1,
+              "type": "fieldgroup",
+              "properties": {
+                "component": "GroupButtons",
+                "label": {
+                  "en-GB": "LoanCread",
+                  "fi-FI": "LoanCread",
+                  "da-DK": "LoanCread"
+                }
+              },
+              "fields": {
+                "f6a7b8c9-6711-9cad-deef-f2a6b7c3d9e0": {
+                  "weight": 4,
+                  "name": "add_Loan_credit",
+                  "id": "add_Loan_credit",
+                  "type": "button",
+                  "properties": {
+                    "label": {
+                      "en-GB": "Add Loan/credit typee",
+                      "da-DK": "Add Loan/credit type",
+                      "fi-FI": "Add Loan/credit type"
+                    },
+                    "placeholder": {
+                      "en-GB": "",
+                      "da-DK": "",
+                      "fi-FI": ""
+                    },
+                    "tooltip": {
+                      "en-GB": "Add Loan/credit type",
+                      "da-DK": "Add Loan/credit type",
+                      "fi-FI": "Add Loan/credit type."
+                    },
+                    "error": {
+                      "en-GB": "Add Loan/credit erroe",
+                      "da-DK": "Add Loan/credit erroe",
+                      "fi-FI": "Add Loan/credit erroe."
+                    },
+                    "options": [
+                      {
+                        "value": "add_Loan_credit_mortgage",
+                        "addicon": true,
+                        "id": "add_Loan_credit_mortgage",
+                        "label": {
+                          "en-GB": "Mortgage",
+                          "da-DK": "Mortgage",
+                          "fi-FI": "Mortgage"
+                        },
+                        "weight": 0
+                      },
+                      {
+                        "value": "add_Loan_credit_visa_credit_card",
+                        "addicon": true,
+                        "id": "add_Loan_credit_visa_credit_card",
+                        "label": {
+                          "en-GB": "Visa credit card",
+                          "da-DK": "Visa credit card",
+                          "fi-FI": "Visa credit card"
+                        },
+                        "weight": 1
+                      },
+                      {
+                        "value": "add_Loan_credit_eurocard",
+                        "addicon": true,
+                        "id": "add_Loan_credit_EuroCard",
+                        "label": {
+                          "en-GB": "EuroCard",
+                          "da-DK": "EuroCard",
+                          "fi-FI": "EuroCard"
+                        },
+                        "weight": 1
+                      },
+                      {
+                        "value": "add_Loan_credit_mastercard",
+                        "addicon": true,
+                        "id": "add_Loan_credit_mastercard",
+                        "label": {
+                          "en-GB": "MasterCard",
+                          "da-DK": "MasterCard",
+                          "fi-FI": "MasterCard"
+                        },
+                        "weight": 3
+                      },
+                      {
+                        "value": "add_Loan_credit_diners_club",
+                        "addicon": true,
+                        "id": "add_Loan_credit_diners_club",
+                        "label": {
+                          "en-GB": "Diners Club",
+                          "da-DK": "Diners Club",
+                          "fi-FI": "Diners Club"
+                        },
+                        "weight": 4
+                      },
+                      {
+                        "value": "add_Loan_credit_car_loan",
+                        "addicon": true,
+                        "id": "add_Loan_credit_car_loan",
+                        "label": {
+                          "en-GB": "Car loan",
+                          "da-DK": "Car loan",
+                          "fi-FI": "Car loan"
+                        },
+                        "weight": 5
+                      },
+                      {
+                        "value": "add_Loan_credit_consumption",
+                        "addicon": true,
+                        "id": "add_Loan_credit_car_consumption",
+                        "label": {
+                          "en-GB": "Consumption",
+                          "da-DK": "Consumption",
+                          "fi-FI": "Consumption"
+                        },
+                        "weight": 9
+                      },
+                      {
+                        "value": "add_Loan_credit_student_loan",
+                        "addicon": true,
+                        "id": "add_Loan_credit_student_loan",
+                        "label": {
+                          "en-GB": "Student loan",
+                          "da-DK": "Student loan",
+                          "fi-FI": "Student loan"
+                        },
+                        "weight": 10
+                      },
+                      {
+                        "value": "add_Loan_credit_other",
+                        "addicon": true,
+                        "id": "add_Loan_credit_other",
+                        "label": {
+                          "en-GB": "Other",
+                          "da-DK": "Other",
+                          "fi-FI": "Other"
+                        },
+                        "weight": 10
+                      }
+                    ]
+                  }
+                },
+                "a54025dd-1df8-4b7a-146b-72e6d0f2a0aa": {
+                  "weight": 3,
+                  "type": "widget",
+                  "component": "MortgageSpesefics",
+                  "properties": {
+                    "component": "MortgageSpesefics",
+                    "label": {
+                      "en-GB": "MortgageSpesefics",
+                      "da-DK": "MortgageSpesefics",
+                      "fi-FI": "MortgageSpesefics"
+                    }
+                  },
+                  "fields": {
+                    "1bcf4ad9-3f3e-94fe-aeb6-2c4e39c59100": {
+                      "weight": 2,
+                      "name": "amount_of_debt",
+                      "id": "amount_of_debt",
+                      "type": "currency",
+                      "component": "CompositInput",
+                      "properties": {
+                        "label": {
+                          "en-GB": "Amount of debt",
+                          "da-DK": "Amount of debt",
+                          "fi-FI": "Amount of debt"
+                        },
+                        "placeholder": {
+                          "en-GB": "Amount of debt",
+                          "da-DK": "Amount of debt",
+                          "fi-FI": "Amount of debt"
+                        },
+                        "tooltip": {
+                          "en-GB": "Amount of debt",
+                          "da-DK": "Amount of debt",
+                          "fi-FI": "Amount of debt"
+                        },
+                        "error": {
+                          "en-GB": "",
+                          "da-DK": "",
+                          "fi-FI": ""
+                        }
+                      }
+                    },
+                    "2bcf4eb9-3f3e-35fe-bea6-2e4a39d00957": {
+                      "weight": 3,
+                      "name": "monthly_installment",
+                      "id": "monthly_installment",
+                      "type": "currency",
+                      "component": "CompositInput",
+                      "properties": {
+                        "label": {
+                          "en-GB": "Monthly installment",
+                          "da-DK": "Monthly installment",
+                          "fi-FI": "Monthly installment"
+                        },
+                        "placeholder": {
+                          "en-GB": "Monthly installment",
+                          "da-DK": "Monthly installment",
+                          "fi-FI": "Monthly installment"
+                        },
+                        "tooltip": {
+                          "en-GB": "Monthly installment",
+                          "da-DK": "Monthly installment",
+                          "fi-FI": "Monthly installment"
+                        },
+                        "error": {
+                          "en-GB": "",
+                          "da-DK": "",
+                          "fi-FI": ""
+                        }
+                      }
+                    },
+                    "ba8e16dd-c1e8-4145-9c00-19ed6803322e": {
+                      "weight": 5,
+                      "name": "has_summerhouse",
+                      "id": "has_summerhouse",
+                      "type": "radio",
+                      "component": "CompositeRadioButton",
+                      "properties": {
+                        "label": {
+                          "en-GB": "Do you wish to Refinance",
+                          "da-DK": "Do you wish to Refinance",
+                          "fi-FI": "Do you wish to Refinance"
+                        },
+                        "placeholder": {
+                          "en-GB": "Do you wish to Refinance",
+                          "da-DK": "Do you wish to Refinance",
+                          "fi-FI": "Do you wish to Refinance"
+                        },
+                        "tooltip": {
+                          "en-GB": "Refinance yada yada yada",
+                          "da-DK": "Refinance yada yada yada.",
+                          "fi-FI": "Refinance yada yada yada"
+                        },
+                        "error": {
+                          "en-GB": "Refinance error.",
+                          "da-DK": "Refinance error",
+                          "fi-FI": "Refinance error"
+                        },
+                        "options": [
+                          {
+                            "value": true,
+                            "id": "Refinance_true",
+                            "label": {
+                              "en-GB": "Yes",
+                              "da-DK": "Ja",
+                              "fi-FI": "Kyllä"
+                            },
+                            "weight": 0
+                          },
+                          {
+                            "value": false,
+                            "id": "Refinance_false",
+                            "label": {
+                              "en-GB": "No",
+                              "da-DK": "Nej",
+                              "fi-FI": "Ei"
+                            },
+                            "weight": 0
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "b466602fA-6444-5a71-e6776-66A64736f1c3": {
+              "weight": 4,
+              "type": "fieldgroup",
+              "properties": {
+                "component": "GroupButtons",
+                "label": {
+                  "en-GB": "purpose_of_the_credit",
+                  "fi-FI": "purpose_of_the_credit",
+                  "da-DK": "purpose_of_the_credit"
+                }
+              },
+              "fields": {
+                "1ba7b8c9-5667-9cad-ade3-e8a2b2c3a9e0": {
+                  "weight": 4,
+                  "name": "purpose_of_the_credit",
+                  "id": "purpose_of_the_credit",
+                  "type": "button",
+                  "component": "GroupButtons",
+                  "properties": {
+                    "label": {
+                      "en-GB": "Purpose of the credit",
+                      "da-DK": "Purpose of the credit",
+                      "fi-FI": "Purpose of the credit"
+                    },
+                    "placeholder": {
+                      "en-GB": "",
+                      "da-DK": "",
+                      "fi-FI": ""
+                    },
+                    "tooltip": {
+                      "en-GB": "what is the purpose of the credit",
+                      "da-DK": "what is the purpose of the credit",
+                      "fi-FI": "what is the purpose of the credit"
+                    },
+                    "error": {
+                      "en-GB": "purpose of the credit erroe",
+                      "da-DK": "purpose of the credit erroe",
+                      "fi-FI": "purpose of the credit erroe."
+                    },
+                    "options": [
+                      {
+                        "value": "purpose_credit_consolidate_loans",
+                        "id": "purpose_credit_consolidate_loans",
+                        "label": {
+                          "en-GB": "Consolidate loans",
+                          "da-DK": "Consolidate loans",
+                          "fi-FI": "Consolidate loans"
+                        },
+                        "weight": 0
+                      },
+                      {
+                        "value": "purpose_credit_consumption",
+                        "id": "purpose_credit_consumption",
+                        "label": {
+                          "en-GB": "Consumption",
+                          "da-DK": "Consumption",
+                          "fi-FI": "Consumption"
+                        },
+                        "weight": 1
+                      },
+                      {
+                        "value": "purpose_credit_renovation",
+                        "id": "purpose_credit_renovation",
+                        "label": {
+                          "en-GB": "Renovation",
+                          "da-DK": "Renovation",
+                          "fi-FI": "Renovation"
+                        },
+                        "weight": 1
+                      },
+                      {
+                        "value": "purpose_credit_vehicle",
+                        "id": "purpose_credit_vehicle",
+                        "label": {
+                          "en-GB": "Vehicle",
+                          "da-DK": "Vehicle",
+                          "fi-FI": "Vehicle"
+                        },
+                        "weight": 3
+                      },
+                      {
+                        "value": "purpose_credit_travel",
+                        "id": "purpose_credit_travel",
+                        "label": {
+                          "en-GB": "Travel",
+                          "da-DK": "Travel",
+                          "fi-FI": "Travel"
+                        },
+                        "weight": 4
+                      },
+                      {
+                        "value": "purpose_credit_health",
+                        "id": "purpose_credit_health",
+                        "label": {
+                          "en-GB": "Health",
+                          "da-DK": "Health",
+                          "fi-FI": "Health"
+                        },
+                        "weight": 5
+                      },
+                      {
+                        "value": "purpose_credit_Services",
+                        "id": "purpose_credit_services",
+                        "label": {
+                          "en-GB": "Services",
+                          "da-DK": "Services",
+                          "fi-FI": "Services"
+                        },
+                        "weight": 9
+                      },
+                      {
+                        "value": "purpose_credit_business",
+                        "id": "purpose_credit_business",
+                        "label": {
+                          "en-GB": "Business",
+                          "da-DK": "Business",
+                          "fi-FI": "Business"
+                        },
+                        "weight": 10
+                      },
+                      {
+                        "value": "purpose_credit_investment",
+                        "id": "purpose_credit_investment",
+                        "label": {
+                          "en-GB": "Investment",
+                          "da-DK": "Investment",
+                          "fi-FI": "Investment"
+                        },
+                        "weight": 11
+                      },
+                      {
+                        "value": "purpose_credit_Studies",
+                        "id": "purpose_credit_studies",
+                        "label": {
+                          "en-GB": "Studies",
+                          "da-DK": "Studies",
+                          "fi-FI": "Studies"
+                        },
+                        "weight": 12
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

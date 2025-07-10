@@ -1,0 +1,22 @@
+.loancredit {
+  display: flex;
+  flex-direction: column;
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  border-width: var(--border-width);
+  border-radius: var(--border-radius);
+
+  box-shadow: var(--box-shadow);
+  -webkit-box-shadow: var(--box-shadow);
+  -moz-box-shadow: var(--box-shadow);
+  overflow: hidden;
+  width: 100%;
+}
+.loancredit-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--button-background-color);
+  width: 100%;
+  padding: 0.5rem;
+  color: var(--text-color);
+}

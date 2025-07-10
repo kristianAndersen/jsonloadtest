@@ -45,7 +45,7 @@ export const useWeightToOrder = () => {
 
     const sortedItems = computed(() => sortByWeight(itemsRef.value));
 
-    const getSequentialTabIndex = (item, weightKey = 'weight') => {
+    const getSequentialTabIndex = (item, _weightKey = 'weight') => {
       const index = sortedItems.value.findIndex(i => i === item);
       return index + 1; // tabindex starts at 1
     }
